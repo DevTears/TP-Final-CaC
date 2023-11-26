@@ -1,0 +1,343 @@
+[
+    {
+        "nombre": "Astra",
+        "descripcion": "La agente ghanesa Astra canaliza las energías del cosmos para remodelar los campos de batalla a su antojo. Con pleno dominio de su forma astral y un talento para una profunda previsión estratégica, siempre está eones por delante del próximo movimiento de su enemigo.",
+        "imagen": "/src/Valorant/Personajes/Astra/Astra.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "Coloca estrellas en Modo Astral (X) ACTIVA una estrella para formar un Pozo Gravitacional. Los jugadores en el área son atraídos hacia el centro antes de que estalle, lo que causa que todos los jugadores que aún siguen atrapados se vuelvan frágiles.",
+                "icono": "/src/Valorant/Personajes/Astra/Habs/C_Astra.webp",
+                "img": "/src/Valorant/Personajes/Astra/Habs/C_Astra_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "Coloca estrellas en Modo Astral (X) ACTIVA una estrella para detonar un Pulso Estelar. El Pulso Estelar carga brevemente y luego ataca, lo que aturde a todos los jugadores en el área.",
+                "icono": "/src/Valorant/Personajes/Astra/Habs/Q_Astra.webp",
+                "img": "/src/Valorant/Personajes/Astra/Habs/Q_Astra_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "Coloca estrellas en Modo Astral (tecla de definitiva). ACTIVA una estrella para transformarla en una Nebulosa (humo). USA una estrella para Disiparla, lo que devuelve la estrella para colocarla en una nueva ubicación después de un momento. Disipar forma una Nebulosa falsa brevemente en la ubicación de la estrella antes de regresar.",
+                "icono": "/src/Valorant/Personajes/Astra/Habs/E_Astra.webp",
+                "img": "/src/Valorant/Personajes/Astra/Habs/E_Astra_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "Cuando División Cósmica esté cargada, usa el DISPARO SECUNDARIO en Modo Astral para apuntarla, luego el DISPARO PRINCIPAL para elegir dos ubicaciones. Una División Cósmica infinita conecta los dos puntos que elegiste. División Cósmica bloquea las balas y amortigua considerablemente el audio.",
+                "icono": "/src/Valorant/Personajes/Astra/Habs/X_Astra.webp",
+                "img": "/src/Valorant/Personajes/Astra/Habs/X_Astra_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Breach",
+        "descripcion": "Breach, el sueco biónico, lanza poderosas ráfagas cinéticas para abrirse paso a la fuerza a través del territorio enemigo. El daño y la interrupción que inflige garantizarán que ninguna pelea sea justa.",
+        "imagen": "/src/Valorant/Personajes/Breach/Breach.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA una carga de fusión y DISPARA para lanzar una ráfaga de acción lenta a través de una pared. La ráfaga infligirá daño masivo a todos los que estén en su alcance.",
+                "icono": "/src/Valorant/Personajes/Breach/Habs/C_Breach.webp",
+                "img": "/src/Valorant/Personajes/Breach/Habs/C_Breach_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "EQUIPA una carga cegadora y DISPARA para lanzar una ráfaga de acción rápida a través de una pared. La carga detonará y cegará a todos los jugadores que la vean.",
+                "icono": "/src/Valorant/Personajes/Breach/Habs/Q_Breach.webp",
+                "img": "/src/Valorant/Personajes/Breach/Habs/Q_Breach_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA un rayo sísmico y MANTÉN PRESIONADO EL BOTÓN DE DISPARO para aumentar la distancia. SUÉLTALO para iniciar el temblor y aturdir a todos los jugadores que estén en la zona.",
+                "icono": "/src/Valorant/Personajes/Breach/Habs/E_Breach.webp",
+                "img": "/src/Valorant/Personajes/Breach/Habs/E_Breach_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "EQUIPA una carga sísmica y DISPARA para enviar un temblor en cascada por una gran zona cónica. El temblor aturde y lanza por el aire a todos los que impacta.",
+                "icono": "/src/Valorant/Personajes/Breach/Habs/X_Breach.webp",
+                "img": "/src/Valorant/Personajes/Breach/Habs/X_Breach_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Brimstone",
+        "descripcion": "Proveniente de Estados Unidos, Brimstone proporciona una constante ventaja para su equipo con su arsenal orbital. Su habilidad otorga información de forma precisa y a distancia, lo que lo hace un comandante sin igual en el campo.",
+        "imagen": "/src/Valorant/Personajes/Brimstone/Brimstone.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA una baliza potenciadora y DISPARA para lanzarla frente a Brimstone. Al caer, Resguardo Potenciador creará un campo que aumenta la velocidad de disparo de los jugadores.",
+                "icono": "/src/Valorant/Personajes/Brimstone/Habs/C_Brimstone.webp",
+                "img": "/src/Valorant/Personajes/Brimstone/Habs/C_Brimstone_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "EQUIPA un lanzagranadas incendiario y DISPARA para lanzar una granada que explota cuando se detiene en el suelo. Esta crea una zona de fuego que permanece en el campo y daña a los enemigos que estén dentro de ella.",
+                "icono": "/src/Valorant/Personajes/Brimstone/Habs/Q_Brimstone.webp",
+                "img": "/src/Valorant/Personajes/Brimstone/Habs/Q_Brimstone_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA un mapa táctico y DISPARA para marcar las ubicaciones en las que caerán las nubes de humo de Brimstone. Usa el DISPARO SECUNDARIO para confirmar y lanzar nubes de humo duraderas que bloquearán la visión en la zona seleccionada.",
+                "icono": "/src/Valorant/Personajes/Brimstone/Habs/E_Brimstone.webp",
+                "img": "/src/Valorant/Personajes/Brimstone/Habs/E_Brimstone_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "EQUIPA un mapa estratégico y DISPARA para lanzar un ataque orbital prolongado de un láser en la ubicación seleccionada. Este infligirá daño masivo con el tiempo a los jugadores que estén en la zona.",
+                "icono": "/src/Valorant/Personajes/Brimstone/Habs/X_Brimstone.webp",
+                "img": "/src/Valorant/Personajes/Brimstone/Habs/X_Brimstone_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Chamber",
+        "descripcion": "Bien vestido y bien armado, el diseñador de armas francés Chamber repele agresores con una precisión mortal. Aprovecha su arsenal personalizado para mantener a los enemigos a raya y eliminarlos desde lejos. Siempre cuenta con la contingencia perfecta para cada plan.",
+        "imagen": "/src/Valorant/Personajes/Chamber/Chamber.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA una trampa que escanea los alrededores buscando enemigos. DISPARA para colocarlo en el suelo. Cuando un enemigo visible entra en contacto, esta comienza una cuenta regresiva que, al terminar, desestabiliza el terreno a su alrededor y crea un área que permanece en la zona y ralentiza a los enemigos dentro de ella. Puedes recoger la trampa para VOLVER A COLOCARLA en otro lugar.",
+                "icono": "/src/Valorant/Personajes/Chamber/Habs/C_Chamber.webp",
+                "img": "/src/Valorant/Personajes/Chamber/Habs/C_Chamber_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "ACTÍVALA para equipar una pistola pesada. Presiona DISPARO SECUNDARIO con la pistola equipada para usar la mira.",
+                "icono": "/src/Valorant/Personajes/Chamber/Habs/Q_Chamber.webp",
+                "img": "/src/Valorant/Personajes/Chamber/Habs/Q_Chamber_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA un anclaje de teletransportación. DISPARA para colocarlo en el suelo. Mientras estés en el suelo y dentro de su zona de alcance, REACTIVA para teletransportarte rápidamente al anclaje. Puedes recoger el anclaje para VOLVER A COLOCARLO en otro lugar.",
+                "icono": "/src/Valorant/Personajes/Chamber/Habs/E_Chamber.webp",
+                "img": "/src/Valorant/Personajes/Chamber/Habs/E_Chamber_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "ACTIVA para invocar un poderoso rifle de francotirador personalizado que mata a un enemigo con cualquier impacto directo en la parte superior del cuerpo. Usa el DISPARO SECUNDARIO para apuntar con la mira. Matar a un enemigo crea un área que permanece en la zona y ralentiza a los jugadores que queden dentro de ella.",
+                "icono": "/src/Valorant/Personajes/Chamber/Habs/X_Chamber.webp",
+                "img": "/src/Valorant/Personajes/Chamber/Habs/X_Chamber_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Cypher",
+        "descripcion": "Cypher, el agente de información marroquí, es un sistema de vigilancia de un solo hombre que puede monitorear todos los movimientos de sus enemigos. No hay secreto que no descubra ni maniobra que no detecte. Cypher siempre está vigilando.",
+        "imagen": "/src/Valorant/Personajes/Cypher/Cypher.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA un cable trampa. DISPARA para colocar un cable trampa en la ubicacion, si un enemigo pasa por encima del cable lo revelaras y si no rompe el cable, lo desorientaras.",
+                "icono": "/src/Valorant/Personajes/Cypher/Habs/C_Cypher.webp",
+                "img": "/src/Valorant/Personajes/Cypher/Habs/C_Cypher_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "Lanza AL INSTANTE una ciberjaula frente a Cypher. Actívala para crear una zona que bloquea la visión y ralentiza a los enemigos que la atraviesan.",
+                "icono": "/src/Valorant/Personajes/Cypher/Habs/Q_Cypher.webp",
+                "img": "/src/Valorant/Personajes/Cypher/Habs/Q_Cypher_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA una cámara espía. DISPARA para colocarla en la ubicación seleccionada. VUELVE A USAR esta habilidad para tomar el control de la vista de la cámara. Mientras la controlas, DISPARA para lanzar un dardo marcador que revelará la ubicación de cualquier jugador al que impacte.",
+                "icono": "/src/Valorant/Personajes/Cypher/Habs/E_Cypher.webp",
+                "img": "/src/Valorant/Personajes/Cypher/Habs/E_Cypher_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "Apunta hacia un jugador enemigo muerto y úsalo DE INMEDIATO para revelar la ubicación de todos los jugadores enemigos con vida.",
+                "icono": "/src/Valorant/Personajes/Cypher/Habs/X_Cypher.webp",
+                "img": "/src/Valorant/Personajes/Cypher/Habs/X_Cypher_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "DeadLock",
+        "descripcion": "La agente noruega Deadlock despliega una variedad de nanocables de alta tecnología para asegurar el campo de batalla, incluso en los asaltos más letales. Nadie escapa de su ojo vigilante ni sobrevive a su ferocidad inquebrantable.",
+        "imagen": "/src/Valorant/Personajes/DeadLock/DeadLock.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA una granada GravNet. DISPARA para lanzarla. Usa el DISPARO SECUNDARIO para lanzar la granada por debajo. La granada GravNet explota al caer y fuerza a los enemigos que se encuentren en la zona a agacharse y a moverse con lentitud.",
+                "icono": "/src/Valorant/Personajes/DeadLock/Habs/C_DeadLock.webp",
+                "img": "/src/Valorant/Personajes/DeadLock/Habs/C_DeadLock_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "EQUIPA un Sensor Sónico. DISPARA para desplegarlo. El sensor vigila un área en busca de enemigos que emitan sonidos. Conmociona la zona si detecta pisadas, disparos o una cantidad de ruido significativa.",
+                "icono": "/src/Valorant/Personajes/DeadLock/Habs/Q_DeadLock.webp",
+                "img": "/src/Valorant/Personajes/DeadLock/Habs/Q_DeadLock_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA un disco de Malla Protectora. DISPARA para lanzarlo hacia adelante. Al caer, el disco genera barreras desde el punto de origen que bloquean el movimiento de los personajes.",
+                "icono": "/src/Valorant/Personajes/DeadLock/Habs/E_DeadLock.webp",
+                "img": "/src/Valorant/Personajes/DeadLock/Habs/E_DeadLock_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "EQUIPA un Acelerador de Nanocables. DISPARA para liberar un pulso de nanocables que capturan al primer enemigo con el que entren en contacto. El enemigo atrapado es arrastrado por un sendero de nanocables y morirá si llega al final, a menos que se libere antes. El capullo de nanocables puede ser destruido.",
+                "icono": "/src/Valorant/Personajes/DeadLock/Habs/X_DeadLock.webp",
+                "img": "/src/Valorant/Personajes/DeadLock/Habs/X_DeadLock_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Fade",
+        "descripcion": "Fade, la cazarrecompensas turca, desata el poder de las pesadillas para apoderarse de los secretos del enemigo. En armonía con el terror puro, acecha a sus objetivos y revela sus miedos más profundos antes de aplastarlos en la oscuridad.",
+        "imagen": "/src/Valorant/Personajes/Fade/Fade.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA una Acechadora. DISPARA para lanzar a la Acechadora, que viajará en línea recta. La Acechadora se enfocará en cualquier enemigo o rastro en su cono de visión frontal y lo perseguirá y ofuscará si lo alcanza. MANTÉN PRESIONADO el botón de DISPARO para guiar a la Acechadora en la dirección de tu retícula.",
+                "icono": "/src/Valorant/Personajes/Fade/Habs/C_Fade.webp",
+                "img": "/src/Valorant/Personajes/Fade/Habs/C_Fade_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "Equipa un orbe de tinta de las pesadillas. DISPARA para lanzar el orbe, el cual caerá en picada al suelo después de un tiempo determinado. Al impactar contra el suelo, la tinta explotará y creará una zona en la que los enemigos que queden atrapados en ella no podrán escapar por medios normales. VUELVE A USAR la habilidad para dejar caer el proyectil anticipadamente mientras vuela.",
+                "icono": "/src/Valorant/Personajes/Fade/Habs/Q_Fade.webp",
+                "img": "/src/Valorant/Personajes/Fade/Habs/Q_Fade_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "Equipa una entidad de las pesadillas. DISPARA para lanzar el orbe, el cual caerá en picada al suelo después de un tiempo determinado. Al impactar contra el suelo, el orbe se convertirá en un ente de las pesadillas que revelará la ubicación de los enemigos en su línea de visión. Los enemigos pueden destruir esta entidad. VUELVE A USAR la habilidad para dejar caer el proyectil anticipadamente mientras vuela.",
+                "icono": "/src/Valorant/Personajes/Fade/Habs/E_Fade.webp",
+                "img": "/src/Valorant/Personajes/Fade/Habs/E_Fade_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "EQUIPA el poder del Miedo. DISPARA para lanzar una onda de energía de las pesadillas que puede atravesar paredes. La energía crea un rastro hacia el oponente, además de ensordecerlo y debilitarlo.",
+                "icono": "/src/Valorant/Personajes/Fade/Habs/X_Fade.webp",
+                "img": "/src/Valorant/Personajes/Fade/Habs/X_Fade_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Harbor",
+        "descripcion": "Originario de las costas de la India, Harbor arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Harbor/Harbor.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Harbor/Habs/C_Harbor.webp",
+                "img": "/src/Valorant/Personajes/Harbor/Habs/C_Harbor_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Harbor/Habs/Q_Harbor.webp",
+                "img": "/src/Valorant/Personajes/Harbor/Habs/Q_Harbor_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Harbor/Habs/E_Harbor.webp",
+                "img": "/src/Valorant/Personajes/Harbor/Habs/E_Harbor_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Harbor/Habs/X_Harbor.webp",
+                "img": "/src/Valorant/Personajes/Harbor/Habs/X_Harbor_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Jett",
+        "descripcion": "Proviene de Corea del Sur. El ágil y evasivo estilo de pelea de Jett le permite enfrentarse a riesgos que otros no pueden. Es imparable en todos los enfrentamientos y acaba con sus enemigos antes de que sepan qué los atacó.",
+        "imagen": "/src/Valorant/Personajes/Jett/Jett.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "Lanza un proyectil AL INSTANTE que se convierte en una nube que bloquea la visión al impactar alguna superficie. MANTÉN PRESIONADA la tecla de la habilidad para cambiar la trayectoria del humo hacia donde apuntes.",
+                "icono": "/src/Valorant/Personajes/Jett/Habs/C_Jett.webp",
+                "img": "/src/Valorant/Personajes/Jett/Habs/C_Jett_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "Propulsa a Jett hacia el aire AL INSTANTE.",
+                "icono": "/src/Valorant/Personajes/Jett/Habs/Q_Jett.webp",
+                "img": "/src/Valorant/Personajes/Jett/Habs/Q_Jett_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "ACTIVA para preparar una ráfaga de viento durante un tiempo limitado. VUELVE A USAR el viento para propulsar a Jett en la dirección a la que se dirige. Si no se está moviendo, se propulsará hacia adelante. La carga de Impulso Ciclón se restablece cada dos asesinatos.",
+                "icono": "/src/Valorant/Personajes/Jett/Habs/E_Jett.webp",
+                "img": "/src/Valorant/Personajes/Jett/Habs/E_Jett_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "EQUIPA un conjunto de cuchillos arrojadizos de gran precisión. DISPARA para lanzar un cuchillo y recarga los cuchillos al asesinar a un oponente. Usa el DISPARO SECUNDARIO para lanzar todos los cuchillos restantes, pero no se recargan al matar a un oponente.",
+                "icono": "/src/Valorant/Personajes/Jett/Habs/X_Jett.webp",
+                "img": "/src/Valorant/Personajes/Jett/Habs/X_Jett_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "KAYO",
+        "descripcion": "KAY/O es una máquina de guerra construida para un único propósito: neutralizar radiantes. Su poder para suprimir las habilidades del enemigo anula la capacidad de sus oponentes para contraatacar, lo que les asegura a él y a sus aliados la ventaja definitiva.",
+        "imagen": "/src/Valorant/Personajes/KAYO/KAYO.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA un fragmento explosivo. DISPARA para lanzarlo. El fragmento se pega al piso y explota varias veces, lo que inflige daño casi mortal en el centro con cada explosión.",
+                "icono": "/src/Valorant/Personajes/KAYO/Habs/C_KAYO.webp",
+                "img": "/src/Valorant/Personajes/KAYO/Habs/C_KAYO_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "EQUIPA una granada cegadora. DISPARA para lanzarla por encima. Usa el DISPARO SECUNDARIO para lanzar una versión más débil que explota rápidamente. La granada cegadora explota luego de un corto tiempo y ciega a cualquiera que esté en la línea de visión.",
+                "icono": "/src/Valorant/Personajes/KAYO/Habs/Q_KAYO.webp",
+                "img": "/src/Valorant/Personajes/KAYO/Habs/Q_KAYO_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA una cuchilla supresora. DISPARA para lanzarla. La cuchilla se adhiere a la primera superficie que toca para activarse y suprimir a cualquiera dentro del radio de explosión. Los enemigos pueden destruir la cuchilla.",
+                "icono": "/src/Valorant/Personajes/KAYO/Habs/E_KAYO.webp",
+                "img": "/src/Valorant/Personajes/KAYO/Habs/E_KAYO_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "Se sobrecarga INSTANTÁNEAMENTE con energía polarizada de radianita que emana de KAY/O en un radio masivo. Los enemigos impactados por las ondas de energía quedan suprimidos durante un breve periodo. Mientras está sobrecargado, KAY/O obtiene Potenciador de combate y se puede volver a estabilizar si lo derriban.",
+                "icono": "/src/Valorant/Personajes/KAYO/Habs/X_KAYO.webp",
+                "img": "/src/Valorant/Personajes/KAYO/Habs/X_KAYO_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Yoru",
+        "descripcion": "El nativo de Japón, Yoru, fractura la realidad para infiltrarse en las líneas enemigas sin ser visto. Con engaños y agresividad por igual, sorprende a sus objetivos antes de que sepan dónde buscarlo.",
+        "imagen": "/src/Valorant/Personajes/Yoru/Yoru.png",
+        "habilidades": [
+            {
+                "nombre": "Habilidad 1",
+                "descripcion": "EQUIPA un eco que imita el sonido de pisadas cuando se activa. DISPARA para activarlo y enviar el eco hacia adelante. Usa el DISPARO SECUNDARIO para colocar un eco en el lugar. USA el eco inactivo para enviarlo hacia adelante.",
+                "icono": "/src/Valorant/Personajes/Yoru/Habs/C_Yoru.webp",
+                "img": "/src/Valorant/Personajes/Yoru/Habs/C_Yoru_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 2",
+                "descripcion": "EQUÍPALO para arrancar un fragmento dimensional inestable de la realidad. DISPARA para lanzar el fragmento, lo que activa un destello que se disipa al impactar con una superficie sólida.",
+                "icono": "/src/Valorant/Personajes/Yoru/Habs/Q_Yoru.webp",
+                "img": "/src/Valorant/Personajes/Yoru/Habs/Q_Yoru_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 3",
+                "descripcion": "EQUIPA un vínculo dimensional. DISPARA para lanzar el vínculo hacia adelante. Usa el DISPARO SECUNDARIO para colocar un vínculo en el lugar. ACTÍVALO para teletransportarte a la ubicación del vínculo. ÚSALO para activar una teletransportación falsa.",
+                "icono": "/src/Valorant/Personajes/Yoru/Habs/E_Yoru.webp",
+                "img": "/src/Valorant/Personajes/Yoru/Habs/E_Yoru_Hab.webp"
+            },
+            {
+                "nombre": "Habilidad 4",
+                "descripcion": "EQUIPA una máscara para ver entre dimensiones. DISPARA para entrar a la dimensión de Yoru, donde los enemigos no pueden verte ni afectarte. REACTÍVALO para salir anticipadamente de la dimensión de Yoru.",
+                "icono": "/src/Valorant/Personajes/Yoru/Habs/X_Yoru.webp",
+                "img": "/src/Valorant/Personajes/Yoru/Habs/X_Yoru_Hab.webp"
+            }
+        ]
+    }
+]

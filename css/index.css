@@ -1,0 +1,804 @@
+/* Fuentes */
+@font-face {
+    font-family: 'Scorpion-Regular';
+    src: url('/src/General/Fonts/Scorpion-Regular/Scorpion.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('/src/General/Fonts/Arimo/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+header {
+    font-family: "Scorpion-Regular";
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+/* Estilo para el navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #672329, #000000);
+    padding: 10px 20px;
+}
+
+/* Estilo para el logo */
+.navbar-left img {
+    height: 60px;
+}
+
+/* Estilo para los enlaces a la derecha con texto contorneado */
+.navbar-right a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto (color y ancho) */
+    color: #fd9099; /* Color del interior del texto */
+    transition: color 0.3s; /* Transición suave de color al pasar el mouse */
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "INICIO" */
+.navbar-right a:nth-child(1):hover {
+    -webkit-text-stroke: 0.2px #130031; /* Contorno alrededor del texto (color y ancho) */
+    color: #842cff; /* Color del interior del texto */
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "CS Go" */
+.navbar-right a:nth-child(2):hover {
+    -webkit-text-stroke: 0.2px #916100; /* Contorno alrededor del texto (color y ancho) */
+    color: #ffd500; /* Color del interior del texto */
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "Valorant" */
+.navbar-right a:nth-child(3):hover {
+    -webkit-text-stroke: 0.2px #7e1720; /* Contorno alrededor del texto (color y ancho) */
+    color: #e10013; /* Color del interior del texto */
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "Left" */
+.navbar-right a:nth-child(4):hover {
+    -webkit-text-stroke: 0.2px #004600; /* Contorno alrededor del texto (color y ancho) */
+    color: #00a00d; /* Color del interior del texto */
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "Contacto" */
+.navbar-right a:nth-child(5):hover {
+    -webkit-text-stroke: 0.2px #130031; /* Contorno alrededor del texto (color y ancho) */
+    color: #842cff; /* Color del interior del texto */
+}
+
+/* Estilo para el botón hamburguesa */
+.mobile-menu-button {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    cursor: pointer;
+    padding: 10px;
+    background: #000000; /* Cambia el color según tus preferencias */
+    color: #fff;
+}
+
+.mobile-menu-button .bar {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+/* Estilo para el menú desplegable */
+.mobile-menu {
+    display: none; /* Ocultar el menú en pantallas grandes */
+    background: linear-gradient(#000000, #672329, #000000);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    z-index: 2; /* Asegura que el menú esté en una capa por encima del contenido */
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-menu a:nth-child(1){
+    -webkit-text-stroke: 0.7px #130031; /* Contorno alrededor del texto (color y ancho) */
+    color: #842cff; /* Color del interior del texto */
+}
+
+.mobile-menu a:nth-child(2){
+    -webkit-text-stroke: 0.7px #ffae00; /* Contorno alrededor del texto (color y ancho) */
+    color: #f2ff00; /* Color del interior del texto */
+}
+
+.mobile-menu a:nth-child(3){
+    -webkit-text-stroke: 0.7px #960000; /* Contorno alrededor del texto (color y ancho) */
+    color: #ff2a2a; /* Color del interior del texto */
+}
+
+.mobile-menu a:nth-child(4){
+    -webkit-text-stroke: 0.2px #0f7e00; /* Contorno alrededor del texto (color y ancho) */
+    color: #34be02; /* Color del interior del texto */
+}
+
+.mobile-menu a:nth-child(5){
+    -webkit-text-stroke: 0.2px #400085; /* Contorno alrededor del texto (color y ancho) */
+    color: #8b1fff; /* Color del interior del texto */
+}
+
+/* Estilo para mostrar u ocultar el menú desplegable */
+@media screen and (max-width: 992px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        display: block;
+        transform: translateY(0);
+    }
+
+    .content.menu-opened {
+        margin-top: 200px;
+    }
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #0a0a0a, #232F40, #0a0a0a);
+}
+
+/* Main */
+.contenedor-main { 
+    margin-top: 83px; 
+    padding-bottom: 10px;
+}
+
+/* PORTADA */
+.portada {
+    position: relative; /* Establece la posición del elemento como relativa */
+    text-align: center; /* Centra el contenido de texto en el elemento */
+    background-color: #232F40; /* Color de fondo del banner */
+}
+
+.portada img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del ancho del contenedor */
+    opacity: 50%; /* Establece la opacidad de la imagen al 50%, lo que la hace semi-transparente */
+}
+
+.portada h1 {
+    font-size: 36px; /* Tamaño de fuente de 36 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    font-family: '-Regular', sans-serif; /* Familia de fuentes personalizada con respaldo de fuentes genéricas sans-serif */
+    color: #fd9099; /* Color del interior del texto */
+    -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto */
+    position: absolute; /* Establece el texto como posición absoluta */
+    top: 50%; /* Lo coloca en la mitad superior del contenedor */
+    left: 50%; /* Lo coloca en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Lo centra vertical y horizontalmente */
+    animation: neon 1s ease-in-out infinite alternate; /* Animación para el efecto parpadeante */
+}
+
+/* Historia */
+.historia {
+    background-color: #000000; /* Cambia el color de fondo a un tono más gris */
+    text-align: center; /* Centra el contenido de texto en el contenedor */
+    padding: 0px 0; /* Relleno cero en todas las direcciones */
+    border-radius: 10px; /* Agrega bordes redondeados al contenedor */
+    margin: 30px; /* Añade un margen alrededor del contenedor */
+}
+
+.historia p {
+    font-family: 'Arimo', sans-serif; /* Define la fuente utilizada para los párrafos de historia */
+    text-align: left; /* Alinea el texto a la izquierda dentro de los párrafos */
+    font-size: 16px; /* Tamaño de fuente para el texto de la historia */
+    margin-top: 0px; /* Sin margen superior para separar el título del párrafo */
+    padding: 10px; /* Añade relleno alrededor de los párrafos */
+    color: #727272; /* Color del interior del texto */
+}
+
+.coloreado {
+    color: #fd9099; /* Color rojo para las palabras coloreadas */
+    font-weight: bold; /* hace que las palabras sean más visibles aplicando un peso de fuente en negrita */
+}
+
+/* Estilos para la carta de personaje */
+.carta-personaje {
+    display: flex; /* Utiliza un modelo de caja flexible */
+    flex-direction: column; /* Coloca los elementos internos en una columna */
+    background-color: #000000; /* Color de fondo negro para la carta */
+    margin: 30px; /* Agrega un margen alrededor de la carta */
+    padding: 20px; /* Agrega relleno interno a la carta */
+    border-radius: 10px; /* Agrega bordes redondeados a la carta */
+    text-align: center; /* Alinea el contenido centrado horizontalmente */
+    transition: opacity 1s ease-in-out; /* Transición de opacidad con duración y efecto de desvanecimiento */
+}   
+
+/* Estilos para el título "Personajes" como un título de sección */
+.titulo-seccion {
+    font-size: 28px; /* Tamaño de fuente para el título */
+    color: #fd9099; /* Color del interior del texto del título */
+    -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto del título (color y ancho) */
+    display: inline-block; /* Permite que el contorno se aplique correctamente */
+    padding: 5px; /* Espaciado interno para separar el contorno del texto del título */
+    font-family: '-Regular', sans-serif; /* Fuente utilizada para el título */
+    margin-bottom: 0px; /* Sin margen inferior para ajustar el espacio entre el título y la carta */
+    margin-top: 0px; /* Sin margen superior */
+    animation: neon 1s ease-in-out infinite alternate; /* Animación para el efecto parpadeante del título */
+}
+
+/* Estilos para la imagen del personaje */
+.imagen-personaje img {
+    background-color: #000000; /* Color de fondo negro detrás de la imagen */
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+    width: 300px; /* Ancho de la imagen de 300 píxeles */
+    margin: 0 auto 5px; /* Centra la imagen horizontalmente y agrega espacio inferior */
+}
+
+/* Estilos para la información del personaje */
+.informacion-personaje {
+    text-align: center; /* Alinea el texto de información al centro horizontalmente */
+}
+
+.informacion-personaje h2 {
+    font-size: 32px; /* Tamaño de fuente para los encabezados de segundo nivel */
+    margin-top: 0px; /* Sin margen superior */
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles para separar el encabezado del párrafo */
+    color: #ffffff; /* Color del texto del encabezado en blanco */
+}
+
+.informacion-personaje p {
+    height: 5rem; /* Altura fija de 5 rem (unidad relativa) para los párrafos */
+    font-size: 16px; /* Tamaño de fuente para los párrafos */
+    color: #666; /* Color del texto del párrafo en gris */
+}
+
+/* Estilos para la imagen del personaje */
+.imagen-personaje img {
+    background-color: #000000; /* Color de fondo negro detrás de la imagen */
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+    width: 300px; /* Ancho de la imagen de 300 píxeles */
+    margin: 0 auto 5px; /* Centra la imagen horizontalmente y agrega espacio inferior */
+}
+
+/* Estilos para la información del personaje */
+.informacion-personaje {
+    text-align: center; /* Alinea el texto de información al centro horizontalmente */
+}
+
+.informacion-personaje h2 {
+    font-size: 32px; /* Tamaño de fuente para los encabezados de segundo nivel */
+    margin-top: 0px; /* Sin margen superior */
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles para separar el encabezado del párrafo */
+    color: #ffffff; /* Color del texto del encabezado en blanco */
+}
+
+.informacion-personaje p {
+    height: 5rem; /* Altura fija de 5 rem (unidad relativa) para los párrafos */
+    font-size: 16px; /* Tamaño de fuente para los párrafos */
+    color: #666; /* Color del texto del párrafo en gris */
+}
+
+/* Estilos para las habilidades */
+.habilidades {
+    display: flex; /* Utiliza un modelo de caja flexible para alinear las habilidades horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre las habilidades */
+    margin: 5px; /* Agrega un pequeño margen alrededor del conjunto de habilidades */
+}
+
+.habilidad img {
+    width: 40px; /* Ancho fijo de las imágenes de habilidades */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre las imágenes de habilidades */
+}
+
+.detalle-habilidad {
+    display: none; /* Inicialmente oculta los detalles de la habilidad */
+    margin-top: 5px; /* Agrega margen superior para separar los detalles de las habilidades */
+}
+
+.detalle-habilidad p {
+    height: 6em; /* Altura fija para los párrafos de detalles de habilidades */
+    font-size: 16px; /* Tamaño de fuente para los detalles de habilidades */
+    color: #777; /* Color del texto de los detalles de habilidades en gris */
+}
+
+.detalle-habilidad img {
+    max-width: 100%; /* Limita el ancho de las imágenes de detalles de habilidades al 100% de su contenedor */
+}
+
+.habilidad-activa img {
+    filter: brightness(1.5); /* Ajusta el brillo de las imágenes para indicar que la habilidad está activa */
+}
+
+/* Estilos para los botones de "Anterior" y "Siguiente" */
+.navegacion-personajes {
+    display: flex; /* Utiliza un modelo de caja flexible para alinear los botones horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los botones */
+    margin: 10px 30px; /* Agrega margen superior e inferior y margen izquierdo y derecho a los botones */
+}
+
+#anterior-personaje,
+#siguiente-personaje {
+    background-color: #FF4655; /* Color de fondo rojo para los botones */
+    color: white; /* Color del texto en los botones */
+    font-size: 24px; /* Tamaño de fuente para los botones */
+    border: none; /* Elimina los bordes de los botones */
+    border-radius: 5px; /* Agrega bordes redondeados a los botones */
+    padding: 10px 20px; /* Añade relleno interno a los botones */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre los botones */
+}
+
+#anterior-personaje:hover,
+#siguiente-personaje:hover {
+    background-color: #D32F2F; /* Cambia el color de fondo al hacer hover en los botones */
+}
+
+/* Estilos para la sección de "Armas" */
+.armas {
+    text-align: center; /* Alinea el contenido al centro horizontalmente */
+    background-color: #000000; /* Color de fondo negro */
+    padding: 20px; /* Agrega relleno interno a la sección de armas */
+    border-radius: 10px; /* Agrega bordes redondeados a la sección */
+    margin: 30px; /* Agrega margen alrededor de la sección */
+}
+
+/* Estilos para los botones de categoría */
+.categorias button {
+    background-color: #D32F2F; /* Color de fondo rojo para los botones de categoría */
+    color: white; /* Color del texto en los botones de categoría */
+    font-size: 18px; /* Tamaño de fuente para los botones de categoría */
+    border: none; /* Elimina los bordes de los botones de categoría */
+    border-radius: 5px; /* Agrega bordes redondeados a los botones de categoría */
+    padding: 5px 10px; /* Añade relleno interno a los botones de categoría */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre los botones de categoría */
+    margin: 5px; /* Agrega margen alrededor de los botones de categoría */
+}
+
+/* Estilos para la clase "categorias" */
+.categorias {
+    display: flex; /* Utiliza un modelo de caja flexible para alinear elementos horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos de categoría */
+    align-items: center; /* Alinea verticalmente los elementos de categoría al centro */
+}
+
+/* Estilos para el botón "Anterior" */
+#categoria-anterior {
+    order: 1; /* Controla el orden de aparición del botón "Anterior" */
+    margin-right: auto; /* Empuja el botón "Anterior" a la izquierda */
+}
+
+/* Estilos para el botón "Siguiente" */
+#categoria-siguiente {
+    order: 3; /* Controla el orden de aparición del botón "Siguiente" */
+    margin-left: auto; /* Empuja el botón "Siguiente" a la derecha */
+}
+
+/* Estilos para el título de la categoría actual */
+#categoria-actual {
+    order: 2; /* Controla el orden de aparición del título de la categoría actual */
+    font-size: 24px; /* Tamaño de fuente para el título de la categoría actual */
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color del texto en blanco */
+}
+
+/* Estilos para la galería de armas */
+.galeria-armas {
+    display: grid; /* Utiliza un sistema de cuadrícula para organizar las armas */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define el diseño de la cuadrícula */
+    gap: 20px; /* Aumenta el espacio entre las cartas de armas */
+    margin-top: 20px; /* Agrega margen superior para separar la galería de armas del título */
+    justify-items: center; /* Alinea horizontalmente los elementos de la cuadrícula al centro */
+}
+
+/* Estilos para cada elemento de arma */
+.arma {
+    background-color: #fff; /* Color de fondo de las tarjetas de arma */
+    border-radius: 5px; /* Agrega bordes redondeados a las tarjetas de arma */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a las tarjetas de arma */
+    transition: transform 0.2s; /* Agrega una transición para el efecto de transformación al hacer hover */
+    text-align: center; /* Alinea el contenido de las tarjetas de arma al centro */
+    cursor: pointer; /* Cambia el cursor a una mano al hacer hover */
+    position: relative; /* Permite posicionar elementos hijos relativamente */
+    overflow: hidden; /* Oculta el contenido que desborda de las tarjetas de arma */
+    aspect-ratio: 1 / 1; /* Mantiene una relación de aspecto 1:1 (cuadrada) para las tarjetas de arma */
+    max-width: 300px; /* Ancho máximo predeterminado para las tarjetas de arma */
+}
+
+/* Estilos para el contenido dentro de cada tarjeta de arma */
+.arma .contenido {
+    padding: 10px; /* Espaciado interno para el contenido de las tarjetas de arma */
+    display: flex; /* Utiliza un modelo de caja flexible para organizar el contenido */
+    flex-direction: column; /* Coloca el contenido en una columna */
+    justify-content: center; /* Alinea verticalmente el contenido al centro */
+    align-items: center; /* Alinea horizontalmente el contenido al centro */
+    height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
+}
+
+/* Estilos para la imagen dentro de cada tarjeta de arma */
+.arma img {
+    max-height: 100%; /* Asegura que la imagen se ajuste al alto disponible */
+    max-width: 100%; /* Asegura que la imagen se ajuste al ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+}
+
+/* Estilos adicionales para tarjetas con imágenes más anchas que altas */
+.arma.imagen-ancha {
+    max-width: 400px; /* Ancho máximo para tarjetas con imágenes más anchas */
+}
+
+/* Estilos para la descripción del arma */
+.arma .descripcion-arma {
+    top: 0;
+    left: 0;
+    padding-top: 30%;
+    position: absolute; /* Posición absoluta en relación con el elemento padre */
+    width: 100%; /* Ocupa todo el ancho del elemento padre */
+    height: 100%; /* Ocupa todo el alto del elemento padre */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    color: white; /* Color del texto en blanco */
+    font-size: 18px; /* Tamaño de fuente para la descripción del arma */
+    opacity: 0; /* Inicialmente, la descripción estará oculta */
+    transition: opacity 0.3s; /* Agrega una transición para la opacidad */
+}
+
+/* Estilos para mostrar la descripción al hacer hover */
+.arma:hover .descripcion-arma {
+    opacity: 1; /* Muestra la descripción al hacer hover en las tarjetas de arma */
+}
+
+/* Estilos para el contenedor principal */
+.map-container {
+    background-color: #000000; /* Color de fondo negro para el contenedor principal */
+    margin: 30px; /* Margen alrededor del contenedor */
+    padding: 20px; /* Relleno interno del contenedor */
+    border-radius: 10px; /* Agrega bordes redondeados al contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave al contenedor */
+    text-align: center; /* Alinea el contenido al centro horizontalmente */
+    display: flex; /* Utiliza flexbox para organizar elementos internos */
+    flex-direction: column; /* Alinea los elementos internos en una columna */
+    justify-content: center; /* Centra verticalmente los elementos internos */
+    align-items: center; /* Centra horizontalmente los elementos internos */
+}
+
+/* Estilos para los mapas */
+.map {
+    display: none; /* Inicialmente, los mapas están ocultos */
+    padding: 10px; /* Relleno interno de los mapas */
+    background-color: #eeeeee; /* Color de fondo de los mapas */
+    border-radius: 10px; /* Agrega bordes redondeados a los mapas */
+    max-width: 80%; /* Establece un ancho máximo para los mapas del 80% del contenedor principal */
+}
+
+.map-inner {
+    position: relative; /* Establece una posición relativa para el elemento interno */
+}
+
+.map-title {
+    font-size: 24px; /* Tamaño de fuente para el título del mapa */
+    color: white; /* Color del texto del título */
+    background-color: rgb(0, 0, 0); /* Fondo del título */
+    padding: 5px; /* Relleno interno del título */
+    border-radius: 5px; /* Agrega bordes redondeados al título */
+    margin: 0; /* Sin margen alrededor del título */
+}
+
+/* Estilos para la imagen del mapa */
+.map img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al ancho disponible */
+    max-height: 100%; /* Asegura que la imagen se ajuste al alto disponible */
+}
+
+/* Estilos para la descripción del mapa */
+.map-description {
+    height: 8rem; /* Altura fija para la descripción del mapa */
+    font-size: 16px; /* Tamaño de fuente para la descripción */
+    color: white; /* Color del texto de la descripción */
+    background-color: rgb(0, 0, 0); /* Fondo de la descripción */
+    padding: 5px; /* Relleno interno de la descripción */
+    border-radius: 5px; /* Agrega bordes redondeados a la descripción */
+}
+
+/* Estilos para los botones de navegación */
+.map-buttons {
+    margin: 10px 0; /* Margen superior e inferior para los botones de navegación */
+}
+
+.map-container button {
+    background-color: #D32F2F; /* Color de fondo rojo para los botones */
+    color: white; /* Color del texto en los botones */
+    font-size: 18px; /* Tamaño de fuente para los botones */
+    border: none; /* Elimina los bordes de los botones */
+    border-radius: 5px; /* Agrega bordes redondeados a los botones */
+    padding: 10px 20px; /* Relleno interno de los botones */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre los botones */
+    margin: 10px; /* Margen alrededor de los botones */
+    transition: background-color 0.3s; /* Agrega una transición para el color de fondo de los botones al hacer hover */
+}
+
+.map-container button:hover {
+    background-color: #D32F2F; /* Cambia el color de fondo al hacer hover en los botones */
+}
+
+/* Estilos para la sección de Twitch */
+.twitch-section {
+    text-align: center; /* Alinea el contenido al centro horizontalmente */
+    background-color: #000000; /* Color de fondo negro para la sección de Twitch */
+    padding: 20px; /* Relleno interno de la sección de Twitch */
+    border-radius: 10px; /* Agrega bordes redondeados a la sección de Twitch */
+    margin: 30px; /* Margen alrededor de la sección de Twitch */
+}
+
+/* Estilos para el título de Twitch */
+.twitch-titulo {
+    font-size: 48px; /* Tamaño de fuente para el título de Twitch */
+    color: #fd9099; /* Color del texto del título de Twitch */
+    -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto del título de Twitch (color y ancho) */
+    display: inline-block; /* Para que el contorno se aplique correctamente */
+    padding: 5px; /* Espaciado interno para separar el contorno del texto del título de Twitch */
+    font-family: '-Regular', sans-serif; /* Fuente personalizada para el título de Twitch */
+    margin-bottom: 0px; /* Sin margen inferior para el título de Twitch */
+    margin-top: 0px; /* Sin margen superior para el título de Twitch */
+    animation: neon 1s ease-in-out infinite alternate; /* Animación para el efecto parpadeante del título de Twitch */
+}
+
+/* Estilos para la sección de streams de Twitch */
+.streams {
+    width: 100%; /* Ancho del 100% para que los elementos se ajusten al contenedor */
+    margin-top: 1rem; /* Margen superior para separar el título de Twitch de los streams */
+    display: grid; /* Utiliza un sistema de cuadrícula para organizar los streams */
+    grid-template-columns: repeat(1, 1fr); /* Organiza los streams en una sola columna */
+    column-gap: 1rem; /* Espacio horizontal entre las columnas de streams */
+    row-gap: 1rem; /* Espacio vertical entre las filas de streams */
+}
+
+/* Estilos para el contenedor de cada stream */
+.stream-container {
+    width: 100%; /* Ancho del 100% para que los contenedores de los streams se ajusten al contenedor padre */
+    overflow: hidden; /* Oculta el contenido que desborda de los contenedores de los streams */
+    position: relative; /* Establece una posición relativa para los contenedores de los streams */
+}
+
+.stream-container::before {
+    content: "LIVE"; /* Texto "LIVE" que aparece encima del stream en vivo */
+    background-color: red; /* Color de fondo rojo para el texto "LIVE" */
+    color: #ffffff; /* Color del texto "LIVE" en blanco */
+    display: block; /* Muestra el contenido como un bloque */
+    padding: 0.2rem 0.5rem; /* Relleno interno del texto "LIVE" */
+    border-radius: 1rem; /* Agrega bordes redondeados al texto "LIVE" */
+    font-size: 0.8rem; /* Tamaño de fuente para el texto "LIVE" */
+    position: absolute; /* Posición absoluta en relación con el contenedor de stream */
+    top: 1rem; /* Posiciona el texto "LIVE" a 1rem desde la parte superior */
+    left: 1rem; /* Posiciona el texto "LIVE" a 1rem desde la izquierda */
+    z-index: 1; /* Coloca el texto "LIVE" por encima de otros elementos */
+    font-weight: 600; /* Peso de la fuente en negrita para el texto "LIVE" */
+}
+
+/* Estilos para la imagen del stream */
+.stream-container img {
+    width: 100%; /* Asegura que la imagen del stream se ajuste al ancho disponible */
+    border-radius: 15px; /* Agrega bordes redondeados a la imagen del stream */
+}
+
+/* Estilos para el título del stream */
+.stream-container h2 {
+    font-size: 1rem; /* Tamaño de fuente para el título del stream */
+    color: #ff0000; /* Color del texto del título del stream en rojo */
+    text-align: left; /* Alinea el título del stream a la izquierda */
+    overflow: hidden; /* Oculta el contenido que desborda del título del stream */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) para indicar texto truncado */
+    -webkit-line-clamp: 2; /* Limita el título del stream a 2 líneas de texto */
+    -webkit-box-orient: vertical; /* Establece la orientación de la caja flexible a vertical */
+    display: -webkit-box; /* Utiliza una caja flexible para manejar el título del stream */
+    font-weight: 600; /* Peso de la fuente en negrita para el título del stream */
+    font-family: 'Arimo', sans-serif; /* Fuente personalizada para el título del stream */
+}
+
+/* Estilos para la descripción del stream */
+.stream-container p {
+    margin-top: 0rem; /* Sin margen superior para el párrafo de descripción del stream */
+    font-size: 0.9rem; /* Tamaño de fuente para el párrafo de descripción del stream */
+    color: #6441a5; /* Color del texto de la descripción del stream */
+    display: flex; /* Utiliza un modelo de caja flexible para organizar el contenido de la descripción del stream */
+    align-items: center; /* Alinea verticalmente los elementos en la descripción del stream */
+    font-weight: 600; /* Peso de la fuente en negrita para la descripción del stream */
+}
+
+.stream-container p svg {
+    margin-right: 0.5rem; /* Espacio a la derecha de los elementos SVG en la descripción del stream */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#000000, #672329);
+    color: #ffffff;
+    padding: 20px;
+}
+  
+.left-section ul,
+.right-section ul {
+    list-style: none;
+    padding: 0;
+}
+.left-section a, .right-section a{
+    text-decoration: none;
+    font-family: "Scorpion-Regular";
+}
+
+.left-section ul li,
+.right-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.center-section {
+    text-align: center;
+}
+
+.center-section {
+    font-family: "Arimo";
+}
+
+.center-section img {
+    width: 100px;
+    height: 100px;
+}
+
+.center-section p{
+    color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.right-section ul {
+    text-align: right;
+}
+  
+.right-section ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.left-section img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.right-section img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px; 
+}
+
+/* Animación para el efecto neon en los títulos */
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Sombra roja intensa al principio de la animación */
+    }
+    100% {
+        text-shadow: 10 10 50px rgba(255, 0, 0, 0.7); /* Sombra roja más suave al final de la animación */
+    }
+}
+
+@media (max-width: 575px) {
+    .portada h1 {
+        font-size: 36px;
+    }
+    .titulo-seccion {
+        font-size: 28px;
+    }
+    .map-description {
+        height: 13rem;
+    }
+    .habilidad img {
+        width: 40px;
+    }
+    .informacion-personaje p {
+        height: 8rem;
+    }
+    .detalle-habilidad p {
+        height: 11em;
+    }
+}
+
+/* Small (576px o más) */
+@media (min-width: 576px) {
+    .portada h1 {
+        font-size: 48px;
+    }
+    .titulo-seccion {
+        font-size: 36px;
+    }
+    .map-description {
+        height: 7rem;
+    }
+    .habilidad img {
+        width: 60px;
+    }
+}
+  
+  /* Medium (768px o más) */
+  @media (min-width: 768px) {
+    .portada h1 {
+        font-size: 56px;
+    }
+    .titulo-seccion {
+        font-size: 48px;
+    }
+    .map-description {
+        height: 6rem;
+    }
+    .streams {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .informacion-personaje p {
+        height: 2.5rem;
+    }
+    .detalle-habilidad p {
+        height: 5em;
+    }
+    .imagen-personaje img {
+        width: 500px;
+    }
+    .habilidad img {
+        width: 80px;
+    }
+  }
+  
+  /* Large (992px o más) */
+  @media (min-width: 992px) {
+    .informacion-personaje p {
+        height: 2rem;
+    }
+    .detalle-habilidad p {
+        height: 3em;
+    }
+    .map-description {
+        height: 5rem;
+    }
+    .imagen-personaje img {
+        width: 500px;
+    }
+    .titulo-seccion {
+        font-size: 56px;
+    }
+    .portada h1 {
+        font-size: 68px;
+    }
+  }
+  
+  /* Extra large (1200px o más) */
+  @media (min-width: 1200px) {
+    .streams {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .map-description {
+        max-width: 90rem;
+    }
+  }

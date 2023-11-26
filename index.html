@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Valorant</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="/src/Iconos/logogg.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+                <a href="/index.html">INICIO</a>
+                <a href="/pages/CStrike.html">Agentes</a>
+                <a href="/pages/Valorant.html">Valorant</a>
+                <a href="/pages/Left4Dead.html">Left 4 Dead</a>
+                <a href="../index.html#formulario">Soporte</a>
+            </div>
+            <div class="mobile-menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="mobile-menu">
+                <a href="/index.html">INICIO</a>
+                <a href="/pages/CStrike.html">Counter-Strike 2</a>
+                <a href="/pages/Valorant.html">Valorant</a>
+                <a href="/pages/Left4Dead.html">Left 4 Dead</a>
+                <a href="../index.html#formulario">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor-main">
+        <div class="portada">
+            <img src="/src/Valorant/Valorant_Banner.jpg" alt="Portada de Valorant">
+            <h1>VALORANT</h1>
+        </div>
+        <div class="historia">
+            <h2 class="titulo-seccion">INFORMACION</h2>
+            <p><span class="coloreado">Valorant</span> Es un juego de disparos en primera persona online que entra dentro del género de shooter táctico en el cual se enfrentan dos equipos con 5 jugadores por bando. Cada personaje tiene una habilidad especial y esta es una de las características que lo hace tan interesante
+            </p>
+            <p>El juego tiene una estética futurista con armas y equipamiento con tecnología de avanzada. A su vez, existen personajes que poseen <span class="coloreado">habilidades mágicas</span> que les permiten vencer a sus enemigos. Cada jugador tendrá una <span class="coloreado">cualidad especial</span> en vistas de cumplir el objetivo de atacar el territorio adversario o defender la zona propia.
+            </p>
+            <p>En la actualidad los <span class="coloreado">deportes electrónicos</span> están en auge y <span class="coloreado">Valorant</span> es de los más jugados.
+            </p>
+        </div>
+
+        <div class="carta-personaje">
+            <h2 class="titulo-seccion">PERSONAJES</h2>
+            <div class="contenido-carta">
+                <div class="imagen-personaje">
+                    <img src="" alt="Img-Personaje">
+                </div>
+                <div class="informacion-personaje">
+                    <h2></h2>
+                    <p></p>
+                    <h2 class="subtitulo-seccion">Habilidades</h2>
+                    <div class="habilidades">
+                        <div class="habilidad" onclick="toggleDetalleHabilidad(1)">
+                            <h2>C</h2>
+                            <img src="" alt="Habilidad 1">
+                        </div>
+                        <div class="habilidad" onclick="toggleDetalleHabilidad(2)">
+                            <h2>Q</h2>
+                            <img src="" alt="Habilidad 2">
+                        </div>
+                        <div class="habilidad" onclick="toggleDetalleHabilidad(3)">
+                            <h2>E</h2>
+                            <img src="" alt="Habilidad 3">
+                        </div>
+                        <div class="habilidad" onclick="toggleDetalleHabilidad(4)">
+                            <h2>X</h2>
+                            <img src="" alt="Habilidad 4">
+                        </div>
+                    </div>
+                    <div id="detalle-habilidad-1" class="detalle-habilidad">
+                        <p></p>
+                        <img src="" alt="IMG Habilidad 1">
+                    </div>
+                    <div id="detalle-habilidad-2" class="detalle-habilidad">
+                        <p></p>
+                        <img src="" alt="IMG Habilidad 2">
+                    </div>
+                    <div id="detalle-habilidad-3" class="detalle-habilidad">
+                        <p></p>
+                        <img src="" alt="IMG Habilidad 3">
+                    </div>
+                    <div id="detalle-habilidad-4" class="detalle-habilidad">
+                        <p></p>
+                        <img src="" alt="IMG Habilidad 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="navegacion-personajes">
+                    <button id="anterior-personaje">⫷</button>
+                    <button id="siguiente-personaje">⫸</button>
+                </div>
+        </div> 
+        
+        <div class="armas">
+            <h2 class="titulo-seccion">ARMAS</h2>
+            <div class="categorias">
+                <button id="categoria-anterior">⫷</button>
+                <span id="categoria-actual">Pistolas</span>
+                <button id="categoria-siguiente">⫸</button>
+            </div>
+            <div class="galeria-armas">
+            </div>
+        </div>
+        <div class="map-container">
+            <h2 class="titulo-seccion">MAPAS</h2>
+            <div class="map" id="ascent">
+                <h2 class="map-title">Mapa: Ascent</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Ascent.webp" alt="Ascent Map">
+                    <div class="map-description">
+                        <p>Un terreno abierto para las batallas por posicionamiento y los enfrentamientos de desgaste divide Ascent en dos sitios. Puedes fortificar cada uno utilizando puertas destructibles: una vez puestas, no habrá manera de pasar a menos que las derribes. Cede el menor territorio posible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Bind">
+                <h2 class="map-title">Mapa: Bind</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Bind.webp" alt="Bind Map">
+                    <div class="map-description">
+                        <p>Dos sitios. No existe un centro. Debes elegir derecha o izquierda. ¿Cuál será tu elección? Ambos ofrecen caminos directos para los atacantes y un par de teletransportadores unidireccionales facilitan el flanqueo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Breeze">
+                <h2 class="map-title">Mapa: Breeze</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Breeze.webp" alt="Breeze Map">
+                    <div class="map-description">
+                        <p>Disfruta de la vista de ruinas históricas o cuevas junto al mar en este paraíso tropical. Pero trae algo con que cubrirte del sol... y de los disparos a larga distancia. Lo necesitarás en estos grandes espacios abiertos. Cuida los flancos y siente la brisa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Fracture">
+                <h2 class="map-title">Mapa: Fracture</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Fracture.webp" alt="Fracture Map">
+                    <div class="map-description">
+                        <p>Un centro de investigación ultrasecreto dividido por un experimento fallido de radianita. Con opciones de defensa tan divididas como el mismo mapa, la elección es tuya: enfrentar a los atacantes en su propio territorio o cerrar las escotillas y resistir el asalto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Haven">
+                <h2 class="map-title">Mapa: Haven</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Haven.webp" alt="Haven Map">
+                    <div class="map-description">
+                        <p>Bajo un monasterio olvidado, emerge un clamor entre los agentes rivales que se enfrentan para controlar tres sitios. Hay más territorio por controlar, pero los defensores pueden usar el terreno adicional para realizar ataques agresivos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Icebox">
+                <h2 class="map-title">Mapa: Icebox</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Icebox.webp" alt="Icebox Map">
+                    <div class="map-description">
+                        <p>Tu próximo campo de batalla es un sitio de excavación secreto de Kingdom en algún lugar del ártico. Los dos sitios para plantar están protegidos tanto por nieve como por metal, y no es fácil acceder a ellos de forma horizontal. Aprovecha las tirolesas y nunca te verán venir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Lotus">
+                <h2 class="map-title">Mapa: Lotus</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Lotus.webp" alt="Lotus Map">
+                    <div class="map-description">
+                        <p>Una misteriosa estructura cuyos muros resguardan un conducto astral irradia poder ancestral. Inmensas y monolíticas puertas brindan una variedad de oportunidades de movimiento y abren el camino a tres misteriosos sitios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Pearl">
+                <h2 class="map-title">Mapa: Pearl</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Pearl.webp" alt="Pearl Map">
+                    <div class="map-description">
+                        <p>Los atacantes avanzan hacia los defensores en este mapa de dos sitios, ambientado en una ciudad submarina. Pearl es un mapa enfocado en el entorno, sin mecánicas. Lleva la batalla hacia un Mid compacto o a zonas más extendidas en nuestro primer mapa en la Tierra Omega.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Split">
+                <h2 class="map-title">Mapa: Split</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Split.webp" alt="Split Map">
+                    <div class="map-description">
+                        <p>Si quieres ir lejos, debes subir. Un par de sitios divididos por un centro elevado permite un movimiento rápido por medio de dos ascensores de cuerda. Cada sitio cuenta con una gran torre vital para el control. Recuerda mirar arriba antes de que todo vuele por los aires.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map" id="Sunset">
+                <h2 class="map-title">Mapa: Sunset</h2>
+                <div class="map-inner">
+                    <img src="/src/Valorant/Mapas/Sunset.webp" alt="Sunset Map">
+                    <div class="map-description">
+                        <p>Un desastre en una instalación local de Kingdom amenaza con sepultar el vecindario completo. Visita tu camión de comida favorito y luego lleva la pelea a la ciudad en este mapa tradicional de tres carriles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-buttons">
+                <button id="anterior-map" onclick="mostrarMapaAnterior()">⫷</button>
+                <button id="siguiente-map" onclick="mostrarMapaSiguiente()">⫸</button>
+            </div>
+        </div>
+
+        <div class="twitch-section">
+            <h1 class="titulo-seccion">STREAMS DE VALORANT</h1>
+            <div class="streams"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="left-section">
+          <ul>
+            <li>
+                <img src="../src/Iconos/home.png" alt="Icono Inicio">
+              <a href="../index.html">INICIO</a>
+            </li>
+            <li>
+              <img src="../src/Iconos/icoval.png" alt="Icono Valorant">
+              <a href="/pages/Valorant.html">VALORANT</a>
+            </li>
+            <li>
+              <img src="../src/Iconos/icocs.png" alt="Icono CSGO">
+              <a href="/pages/CStrike.html">CS2</a>
+            </li>
+            <li>
+              <img src="../src/Iconos/icolefo.png" alt="Icono L4D2">
+              <a href="/pages/Left4Dead.html">L4D2</a>
+            </li>
+          </ul>
+        </div>
+        <div class="center-section">
+          <img src="../src/Iconos/logogg.png" alt="Logo GG Gaming">
+          <p>GGgaming 2020-2024</p>
+          <p>Este sitio es propiedad y está operado por GG gaming LTD. Contacto: Admin@gaming.gg</p>
+          <p>Política de privacidad | Términos del servicio | Condiciones de servicio de YouTube | Política de privacidad de Google</p>
+        </div>
+        <div class="right-section">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+              <img src="../src/Iconos/youtube.svg" alt="Icono discord">
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a>
+              <img src="../src/Iconos/instagram.svg" alt="Icono discord">
+            </li>
+            <li>
+              <a href="https://discord.com/" target="_blank">DISCORD</a>
+              <img src="../src/Iconos/discord.svg" alt="Icono discord">
+            </li>
+            <li>
+              <a href="https://store.steampowered.com/?l=spanish" target="_blank">STEAM</a>
+              <img src="../src/Iconos/steam.svg" alt="Icono discord">
+            </li>
+          </ul>
+        </div>
+    </footer>
+      
+    
+    <script src="/js/index.js"></script>
+</body>
+</html>
