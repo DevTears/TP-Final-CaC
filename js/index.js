@@ -9,6 +9,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var personajes = [];
 
+async function cargarPersonajesDesdeJSON(ruta) {
+  try {
+    const response = await fetch(ruta);
+
+    if (!response.ok) {
+      throw new Error(`Error al cargar el JSON. Código de estado: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log('Datos cargados correctamente:', data);
+
+    return data;
+  } catch (error) {
+    console.error('Error al cargar el JSON:', error);
+    return null;
+  }
+}
+
+// Ejemplo de uso
+const rutaJSON = '/src/Json/personajes.json';
+cargarPersonajesDesdeJSON(rutaJSON).then(personajesCargados => {
+    if (personajesCargados) {
+        // Asigna los personajes cargados a la variable global
+        personajes = personajesCargados;
+
+
+        // Funciones que dependan del Array
+        actualizarCartaPersonaje();
+    }
+});
+
 var indicePersonajeActual = 0;
 // Función para actualizar la información del personaje en la carta
 function actualizarCartaPersonaje() {
@@ -17,25 +48,35 @@ function actualizarCartaPersonaje() {
     var imagenPersonaje = document.querySelector('.imagen-personaje img');
     var habilidades = document.querySelectorAll('.habilidad');
 
-    var personajeActual = personajes[indicePersonajeActual];
+    // Verificar si hay personajes y si el índice es válido
+    if (personajes.length > 0 && indicePersonajeActual >= 0 && indicePersonajeActual < personajes.length) {
+        var personajeActual = personajes[indicePersonajeActual];
 
-    nombrePersonaje.textContent = personajeActual.nombre;
-    descripcionPersonaje.textContent = personajeActual.descripcion;
-    imagenPersonaje.src = personajeActual.imagen;
+        nombrePersonaje.textContent = personajeActual.nombre;
+        descripcionPersonaje.textContent = personajeActual.descripcion;
+        imagenPersonaje.src = personajeActual.imagen;
 
-    // Actualiza las habilidades
-    habilidades.forEach(function (habilidad, index) {
-        var iconoHabilidad = habilidad.querySelector('img');
-        var descripcionHabilidad = document.querySelector('#detalle-habilidad-' + (index + 1) + ' p');
-        var imgHabilidad = document.querySelector('#detalle-habilidad-' + (index + 1) + ' img');
+        // Actualiza las habilidades
+        habilidades.forEach(function (habilidad, index) {
+            var iconoHabilidad = habilidad.querySelector('img');
+            var descripcionHabilidad = document.querySelector('#detalle-habilidad-' + (index + 1) + ' p');
+            var imgHabilidad = document.querySelector('#detalle-habilidad-' + (index + 1) + ' img');
 
-        var habilidadActual = personajeActual.habilidades[index];
+            // Verificar si hay habilidades y si el índice es válido
+            if (personajeActual.habilidades && index < personajeActual.habilidades.length) {
+                var habilidadActual = personajeActual.habilidades[index];
 
-        iconoHabilidad.src = habilidadActual.icono;
-        descripcionHabilidad.textContent = habilidadActual.descripcion;
-        imgHabilidad.src = habilidadActual.img;
-    });
+                iconoHabilidad.src = habilidadActual.icono;
+                descripcionHabilidad.textContent = habilidadActual.descripcion;
+                imgHabilidad.src = habilidadActual.img;
+            } else {
+                console.error('Error: Habilidad no encontrada en el índice ' + index);
+            }
+        });
+    }
 }
+
+
 document.getElementById('anterior-personaje').addEventListener('click', function () {
     indicePersonajeActual = (indicePersonajeActual - 1 + personajes.length) % personajes.length;
     actualizarCartaPersonaje();
