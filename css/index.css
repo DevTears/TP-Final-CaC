@@ -43,33 +43,9 @@ header {
 }
 
 /* Cambiar el color y el contorno al pasar el mouse por encima de "INICIO" */
-.navbar-right a:nth-child(1):hover {
-    -webkit-text-stroke: 0.2px #130031; /* Contorno alrededor del texto (color y ancho) */
-    color: #842cff; /* Color del interior del texto */
-}
-
-/* Cambiar el color y el contorno al pasar el mouse por encima de "CS Go" */
-.navbar-right a:nth-child(2):hover {
-    -webkit-text-stroke: 0.2px #916100; /* Contorno alrededor del texto (color y ancho) */
-    color: #ffd500; /* Color del interior del texto */
-}
-
-/* Cambiar el color y el contorno al pasar el mouse por encima de "Valorant" */
-.navbar-right a:nth-child(3):hover {
+.navbar-right a:hover {
     -webkit-text-stroke: 0.2px #7e1720; /* Contorno alrededor del texto (color y ancho) */
     color: #e10013; /* Color del interior del texto */
-}
-
-/* Cambiar el color y el contorno al pasar el mouse por encima de "Left" */
-.navbar-right a:nth-child(4):hover {
-    -webkit-text-stroke: 0.2px #004600; /* Contorno alrededor del texto (color y ancho) */
-    color: #00a00d; /* Color del interior del texto */
-}
-
-/* Cambiar el color y el contorno al pasar el mouse por encima de "Contacto" */
-.navbar-right a:nth-child(5):hover {
-    -webkit-text-stroke: 0.2px #130031; /* Contorno alrededor del texto (color y ancho) */
-    color: #842cff; /* Color del interior del texto */
 }
 
 /* Estilo para el botón hamburguesa */
@@ -108,29 +84,9 @@ header {
     text-decoration: none;
 }
 
-.mobile-menu a:nth-child(1){
-    -webkit-text-stroke: 0.7px #130031; /* Contorno alrededor del texto (color y ancho) */
-    color: #842cff; /* Color del interior del texto */
-}
-
-.mobile-menu a:nth-child(2){
-    -webkit-text-stroke: 0.7px #ffae00; /* Contorno alrededor del texto (color y ancho) */
-    color: #f2ff00; /* Color del interior del texto */
-}
-
-.mobile-menu a:nth-child(3){
-    -webkit-text-stroke: 0.7px #960000; /* Contorno alrededor del texto (color y ancho) */
-    color: #ff2a2a; /* Color del interior del texto */
-}
-
-.mobile-menu a:nth-child(4){
-    -webkit-text-stroke: 0.2px #0f7e00; /* Contorno alrededor del texto (color y ancho) */
-    color: #34be02; /* Color del interior del texto */
-}
-
-.mobile-menu a:nth-child(5){
-    -webkit-text-stroke: 0.2px #400085; /* Contorno alrededor del texto (color y ancho) */
-    color: #8b1fff; /* Color del interior del texto */
+.mobile-menu a{
+    -webkit-text-stroke: 2px #960d19; /* Contorno alrededor del texto (color y ancho) */
+    color: #fd9099; /* Color del interior del texto */
 }
 
 /* Estilo para mostrar u ocultar el menú desplegable */
@@ -196,26 +152,25 @@ body {
 /* Estilos para la sección del trailer */
 .trailer-section {
     text-align: center;
-    background-color: #000000; /* Color de fondo de la sección del trailer */
+    background-color: #000000;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
 }
 
 .trailer-section p {
-    font-family: 'Arimo', sans-serif; /* Define la fuente utilizada para los párrafos de historia */
-    font-size: 16px; /* Tamaño de fuente para el texto de la historia */
-    margin-top: 0px; /* Sin margen superior para separar el título del párrafo */
-    padding: 10px; /* Añade relleno alrededor de los párrafos */
-    color: #727272; /* Color del interior del texto */
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    margin-top: 0px; 
+    padding: 10px; 
+    color: #727272; 
 }
 
-/* Estilos para el reproductor de video (ajusta según sea necesario) */
 .trailer-section iframe {
-    width: 100%; /* Ajusta el ancho del reproductor según sea necesario */
-    height: 600px; /* Ajusta la altura del reproductor según sea necesario */
-    border: 0; /* Elimina el borde del reproductor */
-    border-radius: 5px; /* Agrega bordes redondeados al reproductor */
+    width: 100%; 
+    height: 600px; 
+    border: 0; 
+    border-radius: 5px;
 }
 
 /* Historia */
