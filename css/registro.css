@@ -1,0 +1,272 @@
+/* Fuentes */
+@font-face {
+    font-family: 'Scorpion-Regular';
+    src: url('/src/General/Fonts/Scorpion-Regular/Scorpion.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('/src/General/Fonts/Arimo/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #0a0a0a, #232F40, #0a0a0a);
+}
+
+header {
+    font-family: "Scorpion-Regular";
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+/* Estilo para el navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #672329, #000000);
+    padding: 10px 20px;
+}
+
+/* Estilo para el logo */
+.navbar-left img {
+    height: 55px;
+}
+
+/* Estilo para los enlaces a la derecha con texto contorneado */
+.navbar-right a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto (color y ancho) */
+    color: #fd9099; /* Color del interior del texto */
+    transition: color 0.3s; /* Transición suave de color al pasar el mouse */
+}
+
+/* Cambiar el color y el contorno al pasar el mouse por encima de "INICIO" */
+.navbar-right a:hover {
+    -webkit-text-stroke: 0.2px #7e1720; /* Contorno alrededor del texto (color y ancho) */
+    color: #e10013; /* Color del interior del texto */
+}
+
+/* Estilo para el botón hamburguesa */
+.mobile-menu-button {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    cursor: pointer;
+    padding: 10px;
+    background: #000000; /* Cambia el color según tus preferencias */
+    color: #fff;
+}
+
+.mobile-menu-button .bar {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+/* Estilo para el menú desplegable */
+.mobile-menu {
+    display: none; /* Ocultar el menú en pantallas grandes */
+    background: linear-gradient(#000000, #672329, #000000);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    z-index: 2; /* Asegura que el menú esté en una capa por encima del contenido */
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-menu a{
+    -webkit-text-stroke: 2px #960d19; /* Contorno alrededor del texto (color y ancho) */
+    color: #fd9099; /* Color del interior del texto */
+}
+
+/* Estilo para mostrar u ocultar el menú desplegable */
+@media screen and (max-width: 992px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        display: block;
+        transform: translateY(0);
+    }
+
+    .content.menu-opened {
+        margin-top: 200px;
+    }
+}
+
+/* Main */
+.contenedor-main { 
+    margin-top: 93px; 
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para el título "Personajes" como un título de sección */
+.titulo-seccion {
+    font-size: 28px; /* Tamaño de fuente para el título */
+    color: #fd9099; /* Color del interior del texto del título */
+    -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto del título (color y ancho) */
+    display: inline-block; /* Permite que el contorno se aplique correctamente */
+    padding: 5px; /* Espaciado interno para separar el contorno del texto del título */
+    font-family: 'Scorpion-Regular', sans-serif; /* Fuente utilizada para el título */
+    margin-bottom: 0px; /* Sin margen inferior para ajustar el espacio entre el título y la carta */
+    margin-top: 0px; /* Sin margen superior */
+    text-align: center;
+    animation: neon 1s ease-in-out infinite alternate; /* Animación para el efecto parpadeante del título */
+}
+
+/* Estilos para el formulario de registro */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Arimo', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #000000;
+    margin-top: 130px;
+}
+
+#registerForm {
+    text-align: center;
+}
+
+#registerForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#registerForm input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+#registerForm button {
+    background-color: #f91124;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#registerForm button:hover {
+    background-color: #b01522;
+}
+
+#registerForm p {
+    margin-top: 10px;
+    color: #fff;
+}
+
+#registerForm a {
+    color: #ff4756;
+    text-decoration: none;
+}
+
+#registerForm a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#000000, #672329);
+    color: #ffffff;
+    padding: 20px;
+  }
+
+.left-section a:hover,
+.right-section a:hover {
+   font-family: "Scorpion-Regular";
+   color: rgb(245, 102, 102);
+}
+  
+.right-section ul li,
+.center-section ul li {
+   justify-content: flex-end;
+   margin-bottom: 10px;
+}
+
+.left-section ul,
+.right-section ul {
+  padding: 0;
+}
+
+.left-section ul li img,
+.right-section ul li img {
+  vertical-align: middle;
+  align-items: center;
+}
+
+.left-section a,
+.right-section a {
+  text-decoration: none;
+  font-family: "Scorpion-Regular";
+  color: red;
+  text-decoration: none;
+  display: inline-block; /* Asegura que la vertical-align funcione */
+  vertical-align: middle; /* Alinea verticalmente el texto con el icono */
+}
+
+.left-section ul li,
+.right-section ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.left-section img,
+.right-section img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+  /* Animación para el efecto neon en los títulos */
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Sombra roja intensa al principio de la animación */
+    }
+    100% {
+        text-shadow: 10 10 50px rgba(255, 0, 0, 0.7); /* Sombra roja más suave al final de la animación */
+    }
+}
