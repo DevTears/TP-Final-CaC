@@ -29,7 +29,7 @@ header {
 
 /* Estilo para el logo */
 .navbar-left img {
-    height: 60px;
+    height: 55px;
 }
 
 /* Estilo para los enlaces a la derecha con texto contorneado */
@@ -137,7 +137,7 @@ body {
 .portada h1 {
     font-size: 36px; /* Tamaño de fuente de 36 píxeles */
     margin-top: 0px; /* Sin margen superior */
-    font-family: '-Regular', sans-serif; /* Familia de fuentes personalizada con respaldo de fuentes genéricas sans-serif */
+    font-family: 'Scorpion-Regular', sans-serif; /* Familia de fuentes personalizada con respaldo de fuentes genéricas sans-serif */
     color: #fd9099; /* Color del interior del texto */
     -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto */
     position: absolute; /* Establece el texto como posición absoluta */
@@ -215,7 +215,7 @@ body {
     -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto del título (color y ancho) */
     display: inline-block; /* Permite que el contorno se aplique correctamente */
     padding: 5px; /* Espaciado interno para separar el contorno del texto del título */
-    font-family: '-Regular', sans-serif; /* Fuente utilizada para el título */
+    font-family: 'Scorpion-Regular', sans-serif; /* Fuente utilizada para el título */
     margin-bottom: 0px; /* Sin margen inferior para ajustar el espacio entre el título y la carta */
     margin-top: 0px; /* Sin margen superior */
     animation: neon 1s ease-in-out infinite alternate; /* Animación para el efecto parpadeante del título */
@@ -529,7 +529,7 @@ body {
     -webkit-text-stroke: 2px #672329; /* Contorno alrededor del texto del título de Twitch (color y ancho) */
     display: inline-block; /* Para que el contorno se aplique correctamente */
     padding: 5px; /* Espaciado interno para separar el contorno del texto del título de Twitch */
-    font-family: '-Regular', sans-serif; /* Fuente personalizada para el título de Twitch */
+    font-family: 'Scorpion-Regular', sans-serif; /* Fuente personalizada para el título de Twitch */
     margin-bottom: 0px; /* Sin margen inferior para el título de Twitch */
     margin-top: 0px; /* Sin margen superior para el título de Twitch */
     animation: neon 1s ease-in-out infinite alternate; /* Animación para el efecto parpadeante del título de Twitch */
@@ -607,68 +607,56 @@ footer {
     background: linear-gradient(#000000, #672329);
     color: #ffffff;
     padding: 20px;
+  }
+
+.left-section a:hover,
+.right-section a:hover {
+   font-family: "Scorpion-Regular";
+   color: rgb(245, 102, 102);
 }
   
+.right-section ul li,
+.center-section ul li {
+   justify-content: flex-end;
+   margin-bottom: 10px;
+}
+
 .left-section ul,
 .right-section ul {
-    list-style: none;
-    padding: 0;
+  padding: 0;
 }
-.left-section a, .right-section a{
-    text-decoration: none;
-    font-family: "Scorpion-Regular";
+
+.left-section ul li img,
+.right-section ul li img {
+  vertical-align: middle;
+  align-items: center;
+}
+
+.left-section a,
+.right-section a {
+  text-decoration: none;
+  font-family: "Scorpion-Regular";
+  color: red;
+  text-decoration: none;
+  display: inline-block; /* Asegura que la vertical-align funcione */
+  vertical-align: middle; /* Alinea verticalmente el texto con el icono */
 }
 
 .left-section ul li,
 .right-section ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.center-section {
-    text-align: center;
-}
-
-.center-section {
-    font-family: "Arimo";
-}
-
-.center-section img {
-    width: 100px;
-    height: 100px;
-}
-
-.center-section p{
-    color: white;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-size: 1em;
-    text-align: center;
-}
-
-.right-section ul {
-    text-align: right;
-}
-  
-.right-section ul li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-}
-
-.left-section img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
+.left-section img,
 .right-section img {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px; 
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
+
+   
 
 /* Animación para el efecto neon en los títulos */
 @keyframes neon {
@@ -699,6 +687,9 @@ footer {
     .detalle-habilidad p {
         height: 11em;
     }
+    .trailer-section iframe {
+        height: 300px; 
+    }
 }
 
 /* Small (576px o más) */
@@ -714,6 +705,9 @@ footer {
     }
     .habilidad img {
         width: 60px;
+    }
+    .trailer-section iframe {
+        height: 400px; 
     }
 }
   
@@ -747,6 +741,9 @@ footer {
     .habilidad img {
         width: 80px;
     }
+    .trailer-section iframe {
+        height: 500px; 
+    }
   }
   
   /* Large (992px o más) */
@@ -769,6 +766,9 @@ footer {
     .portada h1 {
         font-size: 68px;
     }
+    .trailer-section iframe {
+        height: 700px; 
+    }
   }
   
   /* Extra large (1200px o más) */
@@ -782,5 +782,9 @@ footer {
     }
     .map-description {
         max-width: 90rem;
+    }
+    .trailer-section iframe {
+        width: 100%;
+        height: 600px; 
     }
   }

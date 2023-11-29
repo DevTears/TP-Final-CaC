@@ -27,13 +27,11 @@ async function cargarPersonajesDesdeJSON(ruta) {
   }
 }
 
-// Ejemplo de uso
 const rutaJSON = '/src/Json/personajes.json';
 cargarPersonajesDesdeJSON(rutaJSON).then(personajesCargados => {
     if (personajesCargados) {
         // Asigna los personajes cargados a la variable global
         personajes = personajesCargados;
-
 
         // Funciones que dependan del Array
         actualizarCartaPersonaje();

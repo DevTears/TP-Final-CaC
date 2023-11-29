@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="contactForm" action="https://formspree.io/tu_email" method="POST">
+          <h2>¿Tienes algún problema? Contáctanos</h2>
+    
+          <label for="problema">Tipo de problema:</label>
+          <select id="problema" name="problema" required>
+            <option value="" disabled selected>Selecciona un problema</option>
+            <option value="problema1">Problema 1</option>
+            <option value="problema2">Problema 2</option>
+            <option value="problema3">Problema 3</option>
+          </select>
+    
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+    
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="mensaje">Descripción del problema:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    
+    <script src="/js/soporte.js"></script>
+</body>
+</html>

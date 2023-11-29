@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/agentes.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="/src/Iconos/logo.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+                <a href="/index.html">INICIO</a>
+                <a href="/pages/CStrike.html">Agentes</a>
+                <a href="/pages/Valorant.html">Login</a>
+                <a href="../index.html#formulario">Soporte</a>
+            </div>
+            <div class="mobile-menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="mobile-menu">
+                <a href="/index.html">INICIO</a>
+                <a href="/pages/CStrike.html">Agentes</a>
+                <a href="/pages/Valorant.html">Valorant</a>
+                <a href="/pages/Left4Dead.html">Login</a>
+                <a href="../index.html#formulario">Soporte</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contenedor-main">
+        <h2 class="titulo-seccion">TABLA DE RECURSOS DE AGENTES</h2>
+        <table id="tablaPersonajes">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Imagen</th>
+                <th>Habilidades</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Los datos se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="left-section">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/@VALORANTlatam/" target="_blank">
+                <img src="/src/Iconos/youtube.svg" alt="Icono YouTube">YOUTUBE    
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/Valorant" target="_blank">
+                <img src="/src/Iconos/instagram.svg" alt="Icono Instagram">INSTAGRAM
+              </a>
+            </li>
+            <li>
+              <a href="https://playvalorant.com/es-es/" target="_blank">
+                <img src="/src/Iconos/discord.svg" alt="Icono Discord">DESCARGAR
+              </a>
+            </li>
+            <li>
+              <a href="https://store.steampowered.com/?l=spanish" target="_blank">
+                <img src="/src/Iconos/steam.svg" alt="Icono Steam">STEAM
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <ul>
+            <li>
+                <a href="../index.html">INICIO
+                  <img src="/src/Iconos/home.png" alt="Icono Steam">
+                </a>
+            </li>
+            <li>
+                <a href="/templates/agentes.html">AGENTES
+                    <img src="/src/Iconos/icoval.png" alt="Icono Steam">
+                </a>
+            </li>
+            <li>
+                <a href="/templates/login.html">LOGIN
+                    <img src="/src/Iconos/home.png" alt="Icono Steam">
+                </a>
+            </li>
+            <li>
+                <a href="../index.html">SOPORTE
+                    <img src="/src/Iconos/home.png" alt="Icono Steam">
+                </a>
+            </li>
+          </ul>
+        </div>
+    </footer>   
+
+
+    <script src="/js/agentes.js"></script>
 </body>
 </html>
