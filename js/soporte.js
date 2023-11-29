@@ -11,5 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
       }
     });
+    const mobileMenuButton = document.querySelector(".mobile-menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+    });
   });
-  
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+});
