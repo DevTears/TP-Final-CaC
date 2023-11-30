@@ -217,6 +217,37 @@
         ]
     },
     {
+        "nombre": "Gekko",
+        "descripcion": "La agente ghanesa Gekko canaliza las energías del cosmos para remodelar los campos de batalla a su antojo. Con pleno dominio de su forma Gekkol y un talento para una profunda previsión estratégica, siempre está eones por delante del próximo movimiento de su enemigo.",
+        "imagen": "/src/Valorant/Personajes/Gekko/Gekko.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "Coloca estrellas en Modo Gekkol (X) ACTIVA una estrella para formar un Pozo Gravitacional. Los jugadores en el área son atraídos hacia el centro antes de que estalle, lo que causa que todos los jugadores que aún siguen atrapados se vuelvan frágiles.",
+                "icono": "/src/Valorant/Personajes/Gekko/Habs/C_Gekko.webp",
+                "img": "/src/Valorant/Personajes/Gekko/Habs/C_Gekko_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "Coloca estrellas en Modo Gekkol (X) ACTIVA una estrella para detonar un Pulso Estelar. El Pulso Estelar carga brevemente y luego ataca, lo que aturde a todos los jugadores en el área.",
+                "icono": "/src/Valorant/Personajes/Gekko/Habs/Q_Gekko.webp",
+                "img": "/src/Valorant/Personajes/Gekko/Habs/Q_Gekko_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "Coloca estrellas en Modo Gekkol (tecla de definitiva). ACTIVA una estrella para transformarla en una Nebulosa (humo). USA una estrella para Disiparla, lo que devuelve la estrella para colocarla en una nueva ubicación después de un momento. Disipar forma una Nebulosa falsa brevemente en la ubicación de la estrella antes de regresar.",
+                "icono": "/src/Valorant/Personajes/Gekko/Habs/E_Gekko.webp",
+                "img": "/src/Valorant/Personajes/Gekko/Habs/E_Gekko_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "Cuando División Cósmica esté cargada, usa el DISPARO SECUNDARIO en Modo Gekkol para apuntarla, luego el DISPARO PRINCIPAL para elegir dos ubicaciones. Una División Cósmica infinita conecta los dos puntos que elegiste. División Cósmica bloquea las balas y amortigua considerablemente el audio.",
+                "icono": "/src/Valorant/Personajes/Gekko/Habs/X_Gekko.webp",
+                "img": "/src/Valorant/Personajes/Gekko/Habs/X_Gekko_Hab.webp"
+            }
+        ]
+    },
+    {
         "nombre": "Harbor",
         "descripcion": "Originario de las costas de la India, Harbor arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
         "imagen": "/src/Valorant/Personajes/Harbor/Harbor.png",
@@ -244,6 +275,37 @@
                 "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
                 "icono": "/src/Valorant/Personajes/Harbor/Habs/X_Harbor.webp",
                 "img": "/src/Valorant/Personajes/Harbor/Habs/X_Harbor_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Iso",
+        "descripcion": "Originario de las costas de la India, Iso arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Iso/Iso.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Iso/Habs/C_Iso.webp",
+                "img": "/src/Valorant/Personajes/Iso/Habs/C_Iso_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Iso/Habs/Q_Iso.webp",
+                "img": "/src/Valorant/Personajes/Iso/Habs/Q_Iso_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Iso/Habs/E_Iso.webp",
+                "img": "/src/Valorant/Personajes/Iso/Habs/E_Iso_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Iso/Habs/X_Iso.webp",
+                "img": "/src/Valorant/Personajes/Iso/Habs/X_Iso_Hab.webp"
             }
         ]
     },
@@ -306,6 +368,316 @@
                 "descripcion": "Se sobrecarga INSTANTÁNEAMENTE con energía polarizada de radianita que emana de KAY/O en un radio masivo. Los enemigos impactados por las ondas de energía quedan suprimidos durante un breve periodo. Mientras está sobrecargado, KAY/O obtiene Potenciador de combate y se puede volver a estabilizar si lo derriban.",
                 "icono": "/src/Valorant/Personajes/KAYO/Habs/X_KAYO.webp",
                 "img": "/src/Valorant/Personajes/KAYO/Habs/X_KAYO_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "KillJoy",
+        "descripcion": "Originario de las costas de la India, KillJoy arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/KillJoy/KillJoy.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/KillJoy/Habs/C_KillJoy.webp",
+                "img": "/src/Valorant/Personajes/KillJoy/Habs/C_KillJoy_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/KillJoy/Habs/Q_KillJoy.webp",
+                "img": "/src/Valorant/Personajes/KillJoy/Habs/Q_KillJoy_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/KillJoy/Habs/E_KillJoy.webp",
+                "img": "/src/Valorant/Personajes/KillJoy/Habs/E_KillJoy_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/KillJoy/Habs/X_KillJoy.webp",
+                "img": "/src/Valorant/Personajes/KillJoy/Habs/X_KillJoy_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Neon",
+        "descripcion": "Originario de las costas de la India, Neon arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Neon/Neon.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Neon/Habs/C_Neon.webp",
+                "img": "/src/Valorant/Personajes/Neon/Habs/C_Neon_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Neon/Habs/Q_Neon.webp",
+                "img": "/src/Valorant/Personajes/Neon/Habs/Q_Neon_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Neon/Habs/E_Neon.webp",
+                "img": "/src/Valorant/Personajes/Neon/Habs/E_Neon_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Neon/Habs/X_Neon.webp",
+                "img": "/src/Valorant/Personajes/Neon/Habs/X_Neon_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Omen",
+        "descripcion": "Originario de las costas de la India, Omen arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Omen/Omen.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Omen/Habs/C_Omen.webp",
+                "img": "/src/Valorant/Personajes/Omen/Habs/C_Omen_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Omen/Habs/Q_Omen.webp",
+                "img": "/src/Valorant/Personajes/Omen/Habs/Q_Omen_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Omen/Habs/E_Omen.webp",
+                "img": "/src/Valorant/Personajes/Omen/Habs/E_Omen_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Omen/Habs/X_Omen.webp",
+                "img": "/src/Valorant/Personajes/Omen/Habs/X_Omen_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Phoenix",
+        "descripcion": "Originario de las costas de la India, Phoenix arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Phoenix/Phoenix.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Phoenix/Habs/C_Phoenix.webp",
+                "img": "/src/Valorant/Personajes/Phoenix/Habs/C_Phoenix_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Phoenix/Habs/Q_Phoenix.webp",
+                "img": "/src/Valorant/Personajes/Phoenix/Habs/Q_Phoenix_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Phoenix/Habs/E_Phoenix.webp",
+                "img": "/src/Valorant/Personajes/Phoenix/Habs/E_Phoenix_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Phoenix/Habs/X_Phoenix.webp",
+                "img": "/src/Valorant/Personajes/Phoenix/Habs/X_Phoenix_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Raze",
+        "descripcion": "Originario de las costas de la India, Raze arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Raze/Raze.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Raze/Habs/C_Raze.webp",
+                "img": "/src/Valorant/Personajes/Raze/Habs/C_Raze_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Raze/Habs/Q_Raze.webp",
+                "img": "/src/Valorant/Personajes/Raze/Habs/Q_Raze_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Raze/Habs/E_Raze.webp",
+                "img": "/src/Valorant/Personajes/Raze/Habs/E_Raze_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Raze/Habs/X_Raze.webp",
+                "img": "/src/Valorant/Personajes/Raze/Habs/X_Raze_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Reyna",
+        "descripcion": "Originario de las costas de la India, Reyna arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Reyna/Reyna.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Reyna/Habs/C_Reyna.webp",
+                "img": "/src/Valorant/Personajes/Reyna/Habs/C_Reyna_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Reyna/Habs/Q_Reyna.webp",
+                "img": "/src/Valorant/Personajes/Reyna/Habs/Q_Reyna_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Reyna/Habs/E_Reyna.webp",
+                "img": "/src/Valorant/Personajes/Reyna/Habs/E_Reyna_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Reyna/Habs/X_Reyna.webp",
+                "img": "/src/Valorant/Personajes/Reyna/Habs/X_Reyna_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Sage",
+        "descripcion": "Originario de las costas de la India, Sage arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Sage/Sage.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Sage/Habs/C_Sage.webp",
+                "img": "/src/Valorant/Personajes/Sage/Habs/C_Sage_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Sage/Habs/Q_Sage.webp",
+                "img": "/src/Valorant/Personajes/Sage/Habs/Q_Sage_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Sage/Habs/E_Sage.webp",
+                "img": "/src/Valorant/Personajes/Sage/Habs/E_Sage_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Sage/Habs/X_Sage.webp",
+                "img": "/src/Valorant/Personajes/Sage/Habs/X_Sage_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Skye",
+        "descripcion": "Originario de las costas de la India, Skye arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Skye/Skye.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Skye/Habs/C_Skye.webp",
+                "img": "/src/Valorant/Personajes/Skye/Habs/C_Skye_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Skye/Habs/Q_Skye.webp",
+                "img": "/src/Valorant/Personajes/Skye/Habs/Q_Skye_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Skye/Habs/E_Skye.webp",
+                "img": "/src/Valorant/Personajes/Skye/Habs/E_Skye_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Skye/Habs/X_Skye.webp",
+                "img": "/src/Valorant/Personajes/Skye/Habs/X_Skye_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Sova",
+        "descripcion": "Originario de las costas de la India, Sova arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Sova/Sova.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Sova/Habs/C_Sova.webp",
+                "img": "/src/Valorant/Personajes/Sova/Habs/C_Sova_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Sova/Habs/Q_Sova.webp",
+                "img": "/src/Valorant/Personajes/Sova/Habs/Q_Sova_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Sova/Habs/E_Sova.webp",
+                "img": "/src/Valorant/Personajes/Sova/Habs/E_Sova_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Sova/Habs/X_Sova.webp",
+                "img": "/src/Valorant/Personajes/Sova/Habs/X_Sova_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Viper",
+        "descripcion": "Originario de las costas de la India, Viper arrasa el campo de batalla utilizando tecnología ancestral que controla el agua. Desata corrientes furiosas y olas aplastantes para escudar aliados y apalear oponentes.",
+        "imagen": "/src/Valorant/Personajes/Viper/Viper.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "EQUIPA una ola de agua. DISPARA para lanzar la ola hacia adelante y a través de los muros. REUTILÍZALA para detener el avance de la ola. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Viper/Habs/C_Viper.webp",
+                "img": "/src/Valorant/Personajes/Viper/Habs/C_Viper_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "EQUIPA una esfera de agua protectora. DISPARA para lanzar. Usa el DISPARO SECUNDARIO para lanzar por abajo. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea balas.",
+                "icono": "/src/Valorant/Personajes/Viper/Habs/Q_Viper.webp",
+                "img": "/src/Valorant/Personajes/Viper/Habs/Q_Viper_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "EQUIPA un muro de agua. DISPARA para enviar el agua hacia adelante por el suelo. MANTÉN PRESIONADO EL DISPARO para guiar el agua en la dirección de tu retícula, y genera un muro a lo largo de la trayectoria del agua. Puede atravesar paredes. Usa el DISPARO SECUNDARIO mientras curvas el muro para detener su trayectoria anticipadamente. Los jugadores impactados quedan RALENTIZADOS.",
+                "icono": "/src/Valorant/Personajes/Viper/Habs/E_Viper.webp",
+                "img": "/src/Valorant/Personajes/Viper/Habs/E_Viper_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar una zona de géiseres en el suelo. Los enemigos que se encuentren en la zona serán el objetivo de varios impactos sucesivos de géiseres. Los jugadores que reciban un impacto quedarán CONMOCIONADOS.",
+                "icono": "/src/Valorant/Personajes/Viper/Habs/X_Viper.webp",
+                "img": "/src/Valorant/Personajes/Viper/Habs/X_Viper_Hab.webp"
             }
         ]
     },
