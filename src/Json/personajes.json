@@ -477,7 +477,7 @@
             },
             {
                 "nombre": "Q",
-                "descripcion": "EEQUIPA un orbe cegador que recorre una trayectoria curva y detona poco después de lanzarlo. DISPARA para cambiar la trayectoria del orbe cegador hacia la izquierda. Este detonará y cegará a cualquier jugador que lo vea. Usa el DISPARO SECUNDARIO para cambiar su trayectoria hacia la derecha.",
+                "descripcion": "EQUIPA un orbe cegador que recorre una trayectoria curva y detona poco después de lanzarlo. DISPARA para cambiar la trayectoria del orbe cegador hacia la izquierda. Este detonará y cegará a cualquier jugador que lo vea. Usa el DISPARO SECUNDARIO para cambiar su trayectoria hacia la derecha.",
                 "icono": "/src/Valorant/Personajes/Phoenix/Habs/Q_Phoenix.webp",
                 "img": "/src/Valorant/Personajes/Phoenix/Habs/Q_Phoenix_Hab.webp"
             },
@@ -709,6 +709,68 @@
                 "descripcion": "EQUIPA una máscara para ver entre dimensiones. DISPARA para entrar a la dimensión de Yoru, donde los enemigos no pueden verte ni afectarte. REACTÍVALO para salir anticipadamente de la dimensión de Yoru.",
                 "icono": "/src/Valorant/Personajes/Yoru/Habs/X_Yoru.webp",
                 "img": "/src/Valorant/Personajes/Yoru/Habs/X_Yoru_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Sasuke",
+        "descripcion": "Sasuke Uchiha, el prodigioso ninja de la Aldea de la Hoja, se une a la batalla con su habilidad excepcional y su Sharingan legendario. Con un pasado lleno de tragedias y un deseo de venganza ardiente, Sasuke despliega sus habilidades únicas para dominar el campo de batalla y aniquilar a sus enemigos. Su velocidad, destreza y las poderosas técnicas heredadas de su clan lo convierten en una amenaza impredecible.",
+        "imagen": "/src/Valorant/Personajes/Sasuke/Sasuke.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "Sasuke desata su poderoso Chidori, canalizando electricidad en su mano para crear una letal lanza de energía. En Modo Chidori (C), activa esta habilidad para liberar una carga eléctrica en el suelo, generando un Campo Electromagnético. Jugadores dentro de esta área son irresistiblemente atraídos hacia el centro antes de que estalle, resultando en una descarga eléctrica masiva. Aquellos que permanezcan atrapados se verán afectados, volviéndose temporalmente vulnerables a los ataques.",
+                "icono": "/src/Valorant/Personajes/Sasuke/Habs/C_Sasuke.webp",
+                "img": "/src/Valorant/Personajes/Sasuke/Habs/C_Sasuke_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "Sasuke desata la oscura y abrasadora fuerza de Amaterasu, convocando llamas negras inextinguibles. Al activar esta habilidad, selecciona un área en el campo de batalla, desencadenando el poder infernal de Amaterasu en ese lugar. Las llamas persisten en la ubicación, infligiendo daño constante a cualquier enemigo atrapado en su furia ardiente. Amaterasu se mantiene activa durante un tiempo, creando una amenaza continua para aquellos que se atrevan a entrar en su alcance.",
+                "icono": "/src/Valorant/Personajes/Sasuke/Habs/Q_Sasuke.webp",
+                "img": "/src/Valorant/Personajes/Sasuke/Habs/Q_Sasuke_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "Sasuke despierta el formidable Mangekyo Sharingan, una manifestación avanzada de su linaje Uchiha. Al activar esta habilidad, Sasuke se sumerge en un estado de percepción mejorada, otorgándole una visión aguda y la capacidad de anticipar los movimientos enemigos. Durante un breve período, los movimientos enemigos se ralentizan frente a la aguda mirada del Mangekyo Sharingan, proporcionando a Sasuke una ventaja táctica para esquivar ataques y reaccionar con una precisión letal.",
+                "icono": "/src/Valorant/Personajes/Sasuke/Habs/E_Sasuke.webp",
+                "img": "/src/Valorant/Personajes/Sasuke/Habs/E_Sasuke_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "Sasuke desencadena el poder divino del Susanoo, invocando una imponente figura colosal hecha de chakra. Al activar esta habilidad, se manifiesta el Susanoo, una entidad protectora y ofensiva que rodea a Sasuke. El Susanoo ofrece una defensa impenetrable contra los ataques enemigos, bloqueando balas y mitigando daño. Además, el Susanoo empuña una espada divina que inflige daño devastador a cualquier enemigo que se atreva a desafiar su presencia.",
+                "icono": "/src/Valorant/Personajes/Sasuke/Habs/X_Sasuke.webp",
+                "img": "/src/Valorant/Personajes/Sasuke/Habs/X_Sasuke_Hab.webp"
+            }
+        ]
+    },
+    {
+        "nombre": "Naruto",
+        "descripcion": "Naruto Uzumaki, el héroe de la Aldea Oculta de la Hoja, irrumpe en el campo de batalla con su inquebrantable determinación y habilidades ninjas excepcionales. Criado como un marginado y marcado por el poder del Zorro de Nueve Colas, Naruto se ha convertido en un símbolo de perseverancia y amistad.",
+        "imagen": "/src/Valorant/Personajes/Naruto/Naruto.png",
+        "habilidades": [
+            {
+                "nombre": "C",
+                "descripcion": "Al activar esta habilidad, Naruto forma una esfera giratoria de chakra en la palma de su mano. Cuando se utiliza, el Rasengan se convierte en un proyectil de energía formidable que puede ser lanzado hacia los enemigos.",
+                "icono": "/src/Valorant/Personajes/Naruto/Habs/C_Naruto.webp",
+                "img": "/src/Valorant/Personajes/Naruto/Habs/C_Naruto_Hab.webp"
+            },
+            {
+                "nombre": "Q",
+                "descripcion": "Al activar esta habilidad, Naruto crea un Shuriken gigante hecho de cientos de afiladas cuchillas de chakra giratorias. Este Shuriken mejorado puede ser lanzado hacia los enemigos, causando estragos en su camino.",
+                "icono": "/src/Valorant/Personajes/Naruto/Habs/Q_Naruto.webp",
+                "img": "/src/Valorant/Personajes/Naruto/Habs/Q_Naruto_Hab.webp"
+            },
+            {
+                "nombre": "E",
+                "descripcion": "Naruto genera clones de sombra idénticos que se dispersan estratégicamente por el campo de batalla. Estos clones no solo sirven como señuelos, sino que también pueden llevar a cabo tácticas coordinadas, distrayendo a los enemigos y creando oportunidades para ataques sorpresa.",
+                "icono": "/src/Valorant/Personajes/Naruto/Habs/E_Naruto.webp",
+                "img": "/src/Valorant/Personajes/Naruto/Habs/E_Naruto_Hab.webp"
+            },
+            {
+                "nombre": "X",
+                "descripcion": "Naruto despierta el poder del Zorro de Nueve Colas, Kurama, al activar la invocación de su inmenso chakra. Al utilizar esta habilidad, Naruto entra en armonía con Kurama, liberando una cantidad masiva de energía espiritual. La invocación de Kurama transforma a Naruto, otorgándole una mejora significativa en fuerza, velocidad y resistencia.",
+                "icono": "/src/Valorant/Personajes/Naruto/Habs/X_Naruto.webp",
+                "img": "/src/Valorant/Personajes/Naruto/Habs/X_Naruto_Hab.webp"
             }
         ]
     }

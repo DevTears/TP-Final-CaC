@@ -9,26 +9,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var personajes = [];
 
-async function cargarPersonajesDesdeJSON(ruta) {
-  try {
-    const response = await fetch(ruta);
-
-    if (!response.ok) {
-      throw new Error(`Error al cargar el JSON. Código de estado: ${response.status}`);
+async function cargarPersonajesDesdeAPI() {
+    try {
+      const response = await fetch("https://tearsdev.pythonanywhere.com/agentes");
+  
+      if (!response.ok) {
+        throw new Error(`Error al cargar los datos desde la API. Código de estado: ${response.status}`);
+      }
+  
+      const data = await response.json();
+      console.log('Datos cargados correctamente desde la API:', data);
+  
+      return data;
+    } catch (error) {
+      console.error('Error al cargar los datos desde la API:', error);
+      return null;
     }
-
-    const data = await response.json();
-    console.log('Datos cargados correctamente:', data);
-
-    return data;
-  } catch (error) {
-    console.error('Error al cargar el JSON:', error);
-    return null;
-  }
 }
 
-const rutaJSON = '/src/Json/personajes.json';
-cargarPersonajesDesdeJSON(rutaJSON).then(personajesCargados => {
+cargarPersonajesDesdeAPI().then(personajesCargados => {
     if (personajesCargados) {
         // Asigna los personajes cargados a la variable global
         personajes = personajesCargados;

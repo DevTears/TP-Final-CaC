@@ -143,28 +143,30 @@ header {
 
 /* Estilos para la tabla de personajes */
 #tablaPersonajes {
-    border: 5px black;
-    border-radius: 10px; /* Agrega bordes redondeados a la tabla */
-    overflow: hidden; /* Oculta el contenido que sobresale de la tabla */
-    background-color: #ffffff; /* Color de fondo negro para la tabla */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 #tablaPersonajes th {
     border-radius: 5px;
-    padding: 10px; /* Añade relleno interno a las celdas de la tabla */
-    text-align: center; /* Alinea el texto al centro horizontalmente */
-    border: 1px solid #000000; /* Añade un borde blanco a las celdas de la tabla */
+    padding: 10px; 
+    text-align: center;
+    border: 1px solid #000000;
+    cursor: pointer;
 }
 
 #tablaPersonajes button {
-    background-color: #D32F2F; /* Color de fondo rojo para los botones de categoría */
-    color: white; /* Color del texto en los botones de categoría */
-    font-size: 11px; /* Tamaño de fuente para los botones de categoría */
-    border: none; /* Elimina los bordes de los botones de categoría */
-    border-radius: 5px; /* Agrega bordes redondeados a los botones de categoría */
-    padding: 5px 10px; /* Añade relleno interno a los botones de categoría */
-    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre los botones de categoría */
-    margin: 5px; /* Agrega margen alrededor de los botones de categoría */
+    background-color: #D32F2F; 
+    color: white; 
+    font-size: 11px; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    margin: 5px; 
 }
 
 #tablaPersonajes th {
@@ -196,13 +198,44 @@ header {
     background-color: #fd9099;
 }
 
+#container-botones {
+    align-items: center;
+    margin: 20px;
+}
+
+#container-botones button{
+    background-color: #D32F2F; 
+    font-size: 15px; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px;
+    font-family: 'Arimo', sans-serif; 
+    cursor: pointer; 
+    margin: 5px;
+    color: rgb(29, 29, 29);
+    font-weight: bold; 
+}
+
+#container-botones button:nth-child(1){
+    background-color: #12b600;
+}
+
+#container-botones button:nth-child(2){
+    background-color: #ffd900;
+}
+
+#container-botones button:nth-child(3){
+    background-color: #f71a1a;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(#000000, #672329);
     color: #ffffff;
     padding: 20px;
-  }
+    margin-top: auto;
+}
 
 .left-section a:hover,
 .right-section a:hover {

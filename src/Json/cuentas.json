@@ -1,4 +1,4 @@
 [
-    {"username": "admin", "password": "1234"},
-    {"username": "usuario2", "password": "contraseña2"}
+    {"username": "usuario1", "password": "contraseña1", "rango": "user"},
+    {"username": "admin", "password": "1234", "rango": "admin"}
 ]

@@ -12,6 +12,9 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to left, #0a0a0a, #232F40, #0a0a0a);
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% del alto de la ventana */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -116,7 +119,8 @@ header {
 }
 
 /* Main */
-.contenedor-main { 
+.contenedor-main {
+    flex: 1; 
     margin-top: 93px; 
     padding-bottom: 10px;
     text-align: center;
@@ -144,10 +148,10 @@ header {
 
 
 .container {
-    font-family: 'Arimo', sans-serif;
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
+    font-family: 'Arimo', sans-serif;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #000000;
@@ -209,7 +213,8 @@ footer {
     background: linear-gradient(#000000, #672329);
     color: #ffffff;
     padding: 20px;
-  }
+    margin-top: auto;
+}
 
 .left-section a:hover,
 .right-section a:hover {

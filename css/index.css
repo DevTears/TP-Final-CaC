@@ -226,9 +226,10 @@ body {
     background-color: #000000; /* Color de fondo negro detrás de la imagen */
     border-radius: 10px; /* Agrega bordes redondeados a la imagen */
     width: 300px; /* Ancho de la imagen de 300 píxeles */
+    max-width: 500px;
+    max-height: 454px;
     margin: 0 auto 5px; /* Centra la imagen horizontalmente y agrega espacio inferior */
 }
-
 /* Estilos para la información del personaje */
 .informacion-personaje {
     text-align: center; /* Alinea el texto de información al centro horizontalmente */
@@ -281,7 +282,7 @@ body {
 }
 
 .habilidad img {
-    width: 40px; /* Ancho fijo de las imágenes de habilidades */
+    width: 80px; /* Ancho fijo de las imágenes de habilidades */
     cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre las imágenes de habilidades */
 }
 
@@ -297,7 +298,11 @@ body {
 }
 
 .detalle-habilidad img {
-    max-width: 100%; /* Limita el ancho de las imágenes de detalles de habilidades al 100% de su contenedor */
+    min-width: 806.39px;
+    min-height: 454px;
+    max-width: 806.39px;
+    max-height: 454px;
+     /* Limita el ancho de las imágenes de detalles de habilidades al 100% de su contenedor */
 }
 
 .habilidad-activa img {
@@ -685,10 +690,14 @@ footer {
         height: 8rem;
     }
     .detalle-habilidad p {
-        height: 11em;
+        height: 9em;
     }
     .trailer-section iframe {
         height: 300px; 
+    }
+    .imagen-personaje img {
+        max-width: 300px;
+        max-height: 272.39px;
     }
 }
 

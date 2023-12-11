@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/eliminar_agente.css"> <!-- Agrega tu archivo de estilos para esta página -->
+    <title>Eliminar Agente</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="/src/Iconos/logo.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+                <a href="/index.html">INICIO</a>
+                <a href="/templates/agentes.html">Agentes</a>
+                <a href="/templates/login.html">Login</a>
+                <a href="/templates/registro.html">Registrarse</a>
+                <a href="/templates/soporte.html">Soporte</a>
+            </div>
+            <div class="mobile-menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="mobile-menu">
+                <a href="/index.html">INICIO</a>
+                <a href="/templates/agentes.html">Agentes</a>
+                <a href="/templates/login.html">Login</a>
+                <a href="/templates/registro.html">Registrarse</a>
+                <a href="/templates/soporte.html">Soporte</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+<div id="app" class="contenedor-eliminar">
+    
+    <div class="titulo-seccion">Eliminar Agente</div>
+    
+    <label for="selector-agente">Selecciona un agente:</label>
+    <select id="selector-agente" v-model="agenteSeleccionado" @change="cargarDatosAgente">
+        <option v-for="agente in agentes" :value="agente.id">{{ agente.id }} - {{ agente.nombre }}</option>
+    </select>
+    <button id="eliminar-agente-button" @click="eliminarAgente">Eliminar Agente</button>
+</div>
+
+<footer>
+    <div class="left-section">
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/@VALORANTlatam/" target="_blank">
+            <img src="/src/Iconos/youtube.svg" alt="Icono YouTube">YOUTUBE    
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/valorantlatam/" target="_blank">
+            <img src="/src/Iconos/instagram.svg" alt="Icono Instagram">INSTAGRAM
+          </a>
+        </li>
+        <li>
+          <a href="https://playvalorant.com/es-es/" target="_blank">
+            <img src="../src/Iconos/download.png" alt="Icono Descargar">DESCARGAR
+          </a>
+        </li>
+        <li>
+          <a href="https://www.riotgames.com/es" target="_blank">
+            <img src="/src/Iconos/riot.png" alt="Icono Riot">RIOT
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-section">
+      <ul>
+        <li>
+            <a href="../index.html">INICIO
+              <img src="/src/Iconos/home.png" alt="Icono Inicio">
+            </a>
+        </li>
+        <li>
+            <a href="/templates/agentes.html">AGENTES
+                <img src="/src/Iconos/icoval.png" alt="Icono Agentes">
+            </a>
+        </li>
+        <li>
+            <a href="/templates/login.html">LOGIN
+                <img src="/src/Iconos/login.png" alt="Icono Login">
+            </a>
+        </li>
+        <li>
+            <a href="/templates/soporte.html">SOPORTE
+                <img src="/src/Iconos/soporte.png" alt="Icono Soporte">
+            </a>
+        </li>
+      </ul>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="/js/eliminar_agente.js"></script>
+</body>
+</html>

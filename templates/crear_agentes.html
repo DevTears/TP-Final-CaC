@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/crear_agentes.css">
+    <title>Crear Agente</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="/src/Iconos/logo.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+                <a href="/index.html">INICIO</a>
+                <a href="/templates/agentes.html">Agentes</a>
+                <a href="/templates/login.html">Login</a>
+                <a href="/templates/registro.html">Registrarse</a>
+                <a href="/templates/soporte.html">Soporte</a>
+            </div>
+            <div class="mobile-menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="mobile-menu">
+                <a href="/index.html">INICIO</a>
+                <a href="/templates/agentes.html">Agentes</a>
+                <a href="/templates/login.html">Login</a>
+                <a href="/templates/registro.html">Registrarse</a>
+                <a href="/templates/soporte.html">Soporte</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <div class="titulo-seccion">Crear agente</div>
+        <form id="formulario-agente" @submit.prevent="enviarFormulario" action="/crear_agentes" method="POST">
+            <label for="nombre">Nombre del Agente:</label>
+            <input type="text" id="nombre" v-model="nombre" @input="construirRutaImagen" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" v-model="descripcion" required></textarea>
+
+            <label for="imagen">Ruta de la Imagen:</label>
+            <input type="text" id="imagen" v-model="imagen" readonly>
+
+                <h2>Habilidad 1</h2>
+                
+                <label for="habilidad1_nombre">Nombre:</label>
+                <input type="text" id="habilidad1_nombre" v-model="habilidad1_nombre" readonly required>
+
+                <label for="habilidad1_descripcion">Descripción:</label>
+                <textarea id="habilidad1_descripcion" v-model="habilidad1_descripcion" required></textarea>
+
+                <label for="habilidad1_icono">Icono:</label>
+                <input type="text" id="habilidad1_icono" v-model="habilidad1_icono" readonly required>
+
+                <label for="habilidad1_img">Imagen:</label>
+                <input type="text" id="habilidad1_img" v-model="habilidad1_img" readonly required>
+
+                <h2>Habilidad 2</h2>
+
+                <label for="habilidad2_nombre">Nombre:</label>
+                <input type="text" id="habilidad2_nombre" v-model="habilidad2_nombre" readonly required>
+
+                <label for="habilidad2_descripcion">Descripción:</label>
+                <textarea id="habilidad2_descripcion" v-model="habilidad2_descripcion" required></textarea>
+
+                <label for="habilidad2_icono">Icono:</label>
+                <input type="text" id="habilidad2_icono" v-model="habilidad2_icono" readonly required>
+
+                <label for="habilidad2_img">Imagen:</label>
+                <input type="text" id="habilidad2_img" v-model="habilidad2_img" readonly required>
+
+                <h2>Habilidad 3</h2>
+
+                <label for="habilidad3_nombre">Nombre:</label>
+                <input type="text" id="habilidad3_nombre" v-model="habilidad3_nombre" readonly required>
+
+                <label for="habilidad3_descripcion">Descripción:</label>
+                <textarea id="habilidad3_descripcion" v-model="habilidad3_descripcion" required></textarea>
+
+                <label for="habilidad3_icono">Icono:</label>
+                <input type="text" id="habilidad3_icono" v-model="habilidad3_icono" readonly required>
+
+                <label for="habilidad3_img">Imagen:</label>
+                <input type="text" id="habilidad3_img" v-model="habilidad3_img" readonly required>
+
+                <h2>Habilidad 4</h2>
+                <label for="habilidad4_nombre">Nombre:</label>
+                <input type="text" id="habilidad4_nombre" v-model="habilidad4_nombre" readonly required>
+
+                <label for="habilidad4_descripcion">Descripción:</label>
+                <textarea id="habilidad4_descripcion" v-model="habilidad4_descripcion" required></textarea>
+
+                <label for="habilidad4_icono">Icono:</label>
+                <input type="text" id="habilidad4_icono" v-model="habilidad4_icono" readonly required>
+
+                <label for="habilidad4_img">Imagen:</label>
+                <input type="text" id="habilidad4_img" v-model="habilidad4_img" readonly required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>   
+
+    <footer>
+        <div class="left-section">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/@VALORANTlatam/" target="_blank">
+                <img src="/src/Iconos/youtube.svg" alt="Icono YouTube">YOUTUBE    
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/valorantlatam/" target="_blank">
+                <img src="/src/Iconos/instagram.svg" alt="Icono Instagram">INSTAGRAM
+              </a>
+            </li>
+            <li>
+              <a href="https://playvalorant.com/es-es/" target="_blank">
+                <img src="../src/Iconos/download.png" alt="Icono Descargar">DESCARGAR
+              </a>
+            </li>
+            <li>
+              <a href="https://www.riotgames.com/es" target="_blank">
+                <img src="/src/Iconos/riot.png" alt="Icono Riot">RIOT
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <ul>
+            <li>
+                <a href="../index.html">INICIO
+                  <img src="/src/Iconos/home.png" alt="Icono Inicio">
+                </a>
+            </li>
+            <li>
+                <a href="/templates/agentes.html">AGENTES
+                    <img src="/src/Iconos/icoval.png" alt="Icono Agentes">
+                </a>
+            </li>
+            <li>
+                <a href="/templates/login.html">LOGIN
+                    <img src="/src/Iconos/login.png" alt="Icono Login">
+                </a>
+            </li>
+            <li>
+                <a href="/templates/soporte.html">SOPORTE
+                    <img src="/src/Iconos/soporte.png" alt="Icono Soporte">
+                </a>
+            </li>
+          </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="/js/crear_agente.js"></script>
+</body>
+</html>

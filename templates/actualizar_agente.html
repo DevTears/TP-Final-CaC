@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/actualizar_agente.css">
+    <title>Actualizar Agente</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="/src/Iconos/logo.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+                <a href="/index.html">INICIO</a>
+                <a href="/templates/agentes.html">Agentes</a>
+                <a href="/templates/login.html">Login</a>
+                <a href="/templates/registro.html">Registrarse</a>
+                <a href="/templates/soporte.html">Soporte</a>
+            </div>
+            <div class="mobile-menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="mobile-menu">
+                <a href="/index.html">INICIO</a>
+                <a href="/templates/agentes.html">Agentes</a>
+                <a href="/templates/login.html">Login</a>
+                <a href="/templates/registro.html">Registrarse</a>
+                <a href="/templates/soporte.html">Soporte</a>
+            </div>
+        </nav>
+    </header>
+
+
+<div id="app" class="form-container">
+    
+    <div class="titulo-seccion">Actualizar Agente</div>
+    
+    <form id="formulario-actualizar-agente" @submit.prevent="enviarFormulario">
+        <label for="selector-agente">Selecciona un agente:</label>
+            <select id="selector-agente" v-model="agenteSeleccionado" @change="cargarDatosAgente">
+            <option v-for="agente in agentes" :value="agente.id">{{ agente.id }} - {{ agente.nombre }}</option>
+            </select>
+        <label for="nombre">Nombre del Agente:</label>
+        <input type="text" id="nombre" v-model="agente.nombre" required>
+
+        
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" v-model="agente.descripcion" required></textarea>
+
+        
+        <label for="imagen">Ruta de la Imagen:</label>
+        <input type="text" id="imagen" v-model="agente.imagen"readonly required>
+
+        
+        <h2>Habilidad 1</h2>   
+        <label for="habilidades[0].nombre">Nombre:</label>
+        <input type="text" id="habilidades[0].nombre" v-model="agente.habilidades[0].nombre" readonly required>
+        <label for="habilidades[0].descripcion">Descripción:</label>
+        <textarea id="habilidades[0].descripcion" v-model="agente.habilidades[0].descripcion" required></textarea>
+        <label for="habilidades[0].icono">Icono:</label>
+        <input type="text" id="habilidades[0].icono" v-model="agente.habilidades[0].icono" readonly required>
+        <label for="habilidades[0].img">Imagen:</label>
+        <input type="text" id="habilidades[0].img" v-model="agente.habilidades[0].img" readonly required>
+
+        
+        <h2>Habilidad 2</h2>   
+        <label for="habilidades[1].nombre">Nombre:</label>
+        <input type="text" id="habilidades[1].nombre" v-model="agente.habilidades[1].nombre" readonly required>
+        <label for="habilidades[1].descripcion">Descripción:</label>
+        <textarea id="habilidades[1].descripcion" v-model="agente.habilidades[1].descripcion" required></textarea>
+        <label for="habilidades[1].icono">Icono:</label>
+        <input type="text" id="habilidades[1].icono" v-model="agente.habilidades[1].icono" readonly required>
+        <label for="habilidades[1].img">Imagen:</label>
+        <input type="text" id="habilidades[1].img" v-model="agente.habilidades[1].img" readonly required>
+
+        
+        <h2>Habilidad 3</h2>   
+        <label for="habilidades[2].nombre">Nombre:</label>
+        <input type="text" id="habilidades[2].nombre" v-model="agente.habilidades[2].nombre" readonly required>
+        <label for="habilidades[2].descripcion">Descripción:</label>
+        <textarea id="habilidades[2].descripcion" v-model="agente.habilidades[2].descripcion" required></textarea>
+        <label for="habilidades[2].icono">Icono:</label>
+        <input type="text" id="habilidades[2].icono" v-model="agente.habilidades[2].icono" readonly required>
+        <label for="habilidades[2].img">Imagen:</label>
+        <input type="text" id="habilidades[2].img" v-model="agente.habilidades[2].img" readonly required>
+
+        
+        <h2>Habilidad 4</h2>   
+        <label for="habilidades[3].nombre">Nombre:</label>
+        <input type="text" id="habilidades[3].nombre" v-model="agente.habilidades[3].nombre" readonly required>
+        <label for="habilidades[3].descripcion">Descripción:</label>
+        <textarea id="habilidades[3].descripcion" v-model="agente.habilidades[3].descripcion" required></textarea>
+        <label for="habilidades[3].icono">Icono:</label>
+        <input type="text" id="habilidades[3].icono" v-model="agente.habilidades[3].icono" readonly required>
+        <label for="habilidades[3].img">Imagen:</label>
+        <input type="text" id="habilidades[3].img" v-model="agente.habilidades[3].img" readonly required>
+
+        
+        <button type="submit">Actualizar Agente</button>
+    </form>
+</div>
+
+<footer>
+    <div class="left-section">
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/@VALORANTlatam/" target="_blank">
+            <img src="/src/Iconos/youtube.svg" alt="Icono YouTube">YOUTUBE    
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/valorantlatam/" target="_blank">
+            <img src="/src/Iconos/instagram.svg" alt="Icono Instagram">INSTAGRAM
+          </a>
+        </li>
+        <li>
+          <a href="https://playvalorant.com/es-es/" target="_blank">
+            <img src="../src/Iconos/download.png" alt="Icono Descargar">DESCARGAR
+          </a>
+        </li>
+        <li>
+          <a href="https://www.riotgames.com/es" target="_blank">
+            <img src="/src/Iconos/riot.png" alt="Icono Riot">RIOT
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-section">
+      <ul>
+        <li>
+            <a href="../index.html">INICIO
+              <img src="/src/Iconos/home.png" alt="Icono Inicio">
+            </a>
+        </li>
+        <li>
+            <a href="/templates/agentes.html">AGENTES
+                <img src="/src/Iconos/icoval.png" alt="Icono Agentes">
+            </a>
+        </li>
+        <li>
+            <a href="/templates/login.html">LOGIN
+                <img src="/src/Iconos/login.png" alt="Icono Login">
+            </a>
+        </li>
+        <li>
+            <a href="/templates/soporte.html">SOPORTE
+                <img src="/src/Iconos/soporte.png" alt="Icono Soporte">
+            </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="/js/actualizar_agente.js"></script>
+</body>
+</html>

@@ -39,10 +39,10 @@
         <table id="tablaPersonajes">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Imagen</th>
+                <th onclick="ordenarTabla(0)">ID</th>
+                <th onclick="ordenarTabla(1)">Nombre</th>
+                <th onclick="ordenarTabla(2)">Descripción</th>
+                <th onclick="ordenarTabla(3)">Imagen</th>
                 <th>Habilidades</th>
               </tr>
             </thead>
@@ -50,7 +50,10 @@
               <!-- Los datos se agregarán aquí dinámicamente -->
             </tbody>
         </table>
+        <div id="container-botones">
+        </div>
     </div>
+    <div id="app"></div>
 
     <footer>
       <div class="left-section">
@@ -103,7 +106,8 @@
       </div>
     </footer>  
 
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="/js/agentes.js"></script>
+    <script src="/js/funciones_tabla.js"></script>
 </body>
 </html>

@@ -19,7 +19,6 @@ async function cargarCuentasDesdeJSON() {
     }
 }
 
-// Función para manejar el inicio de sesión
 async function login() {
     // Obtener valores de los campos
     var username = document.getElementById("username").value;
@@ -33,6 +32,9 @@ async function login() {
         var cuenta = cuentas.find(c => c.username === username && c.password === password);
 
         if (cuenta !== undefined) {
+            // Almacenar el rango del usuario en el localStorage
+            localStorage.setItem('rango', cuenta.rango);
+
             // Redirigir a la página de Agentes
             window.location.href = "/templates/agentes.html?username=" + username;
         } else {
