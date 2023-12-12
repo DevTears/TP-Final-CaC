@@ -228,6 +228,8 @@ body {
     width: 300px; /* Ancho de la imagen de 300 píxeles */
     max-width: 500px;
     max-height: 454px;
+    min-width: 500px;
+    min-height: 454px;
     margin: 0 auto 5px; /* Centra la imagen horizontalmente y agrega espacio inferior */
 }
 /* Estilos para la información del personaje */
@@ -696,8 +698,8 @@ footer {
         height: 300px; 
     }
     .imagen-personaje img {
-        max-width: 300px;
-        max-height: 272.39px;
+        width: 300px;
+        height: 272.39px;
     }
 }
 
@@ -717,6 +719,10 @@ footer {
     }
     .trailer-section iframe {
         height: 400px; 
+    }
+    .imagen-personaje img {
+        width: 300px;
+        height: 272.39px;
     }
 }
   
